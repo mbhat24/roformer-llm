@@ -5,7 +5,7 @@ Multi-Head Attention with Rotary Position Embeddings
 import torch
 import torch.nn as nn
 import math
-from rope import RotaryPositionEmbedding
+from .rope import RotaryPositionEmbedding
 
 
 class MultiHeadAttention(nn.Module):

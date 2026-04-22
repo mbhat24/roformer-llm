@@ -8,8 +8,8 @@ import torch.nn as nn
 import time
 import numpy as np
 from typing import List, Dict
-from model import RoFormerLLM, RoFormerLLMConfig
-from word_tokenizer import WordTokenizer
+from ..model.llm import RoFormerLLM, RoFormerLLMConfig
+from ..data.tokenizer import WordTokenizer
 
 
 class LLMBenchmarks:

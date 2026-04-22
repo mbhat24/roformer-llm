@@ -6,7 +6,7 @@ A decoder-only transformer with rotary position embeddings
 import torch
 import torch.nn as nn
 import math
-from attention import TransformerBlock
+from .attention import TransformerBlock
 
 
 class RoFormerLLM(nn.Module):

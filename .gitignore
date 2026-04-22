@@ -38,9 +38,11 @@ ENV/
 *.ckpt
 
 # Data
-data/
+data/raw/
+data/processed/
 *.txt
 !requirements.txt
+!src/
 
 # Jupyter
 .ipynb_checkpoints/

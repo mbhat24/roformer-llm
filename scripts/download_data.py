@@ -26,12 +26,12 @@ def download_shakespeare() -> str:
         text = text[start_idx + len(start_marker):end_idx]
     
     # Save to file
-    os.makedirs('data', exist_ok=True)
-    with open('data/shakespeare.txt', 'w', encoding='utf-8') as f:
+    os.makedirs('data/raw', exist_ok=True)
+    with open('data/raw/shakespeare.txt', 'w', encoding='utf-8') as f:
         f.write(text)
     
     print(f"Downloaded {len(text)} characters")
-    print(f"Saved to data/shakespeare.txt")
+    print(f"Saved to data/raw/shakespeare.txt")
     
     return text
 
@@ -70,13 +70,14 @@ def main():
     chunks = prepare_training_data(text, chunk_size=256)
     
     # Save chunks
-    with open('data/training_chunks.txt', 'w', encoding='utf-8') as f:
+    os.makedirs('data/processed', exist_ok=True)
+    with open('data/processed/training_chunks.txt', 'w', encoding='utf-8') as f:
         for chunk in chunks:
             f.write(chunk + '\n')
     
     print(f"\nTraining data ready!")
     print(f"Total chunks: {len(chunks)}")
-    print(f"Saved to data/training_chunks.txt")
+    print(f"Saved to data/processed/training_chunks.txt")
 
 
 if __name__ == "__main__":

@@ -1,127 +1,197 @@
 # RoFormer LLM
 
-A decoder-only transformer language model enhanced with Rotary Position Embeddings (RoPE) from the RoFormer paper.
+A professional decoder-only transformer language model enhanced with Rotary Position Embeddings (RoPE) from the RoFormer paper.
 
 ## Overview
 
-This project implements a GPT-style autoregressive language model that uses RoFormer's rotary position embeddings instead of traditional absolute position embeddings. RoPE encodes position information by rotating the query and key vectors, which naturally incorporates relative position dependency in the attention mechanism.
+This project implements a production-ready GPT-style autoregressive language model that uses RoFormer's rotary position embeddings. RoPE encodes position information by rotating query and key vectors, naturally incorporating relative position dependency in the attention mechanism.
 
-## Architecture
+## Project Structure
 
-- **Rotary Position Embeddings (RoPE)**: Position information is encoded by rotating query and key vectors based on their absolute positions
-- **Multi-Head Attention**: Standard transformer attention enhanced with RoPE
-- **Transformer Blocks**: Pre-norm architecture with attention and feed-forward layers
-- **Language Modeling Head**: Projects to vocabulary for next-token prediction
+```
+roformer-llm/
+├── src/
+│   └── roformer/
+│       ├── model/          # Model components (RoPE, attention, LLM)
+│       ├── data/           # Data loading, tokenization, preprocessing
+│       ├── training/       # Training utilities (checkpointing)
+│       ├── utils/          # Configuration, logging, hardware detection
+│       └── evaluation/     # Benchmarks and evaluation metrics
+├── configs/                # YAML configuration files
+├── scripts/                # Training and evaluation scripts
+├── data/                   # Data storage (raw and processed)
+├── checkpoints/            # Model checkpoints
+├── logs/                   # Training logs
+├── tests/                  # Unit tests
+└── docs/                   # Documentation
+```
 
 ## Key Features
 
-- **Relative Position Encoding**: RoPE naturally encodes relative positions through rotation
-- **Sequence Length Flexibility**: No maximum sequence length constraint
-- **Long-Term Decay**: Attention weights decay with relative distance
-- **Linear Attention Compatible**: Can work with linear attention mechanisms
+- **Rotary Position Embeddings (RoPE)**: Mathematically correct implementation from RoFormer paper
+- **Hardware Auto-Detection**: Automatically optimizes for CUDA, MPS (Apple Silicon), or CPU
+- **Professional Training Loop**: Learning rate scheduling, checkpointing, logging, validation
+- **Custom Data Support**: Load data from files, URLs, directories, or direct input
+- **Configuration Management**: YAML-based configuration system
+- **Standard Benchmarks**: Perplexity, generation speed, memory usage, coherence
+- **Production Ready**: Proper logging, checkpointing, and error handling
 
 ## Installation
 
 ```bash
+# Clone repository
+git clone https://github.com/mbhat24/roformer-llm.git
+cd roformer-llm
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Or install as package
+pip install -e .
 ```
 
-## Usage
+## Quick Start
 
-### Training
+### 1. Prepare Data
 
 ```bash
-python train.py
+# Download sample data (Shakespeare)
+python scripts/download_data.py
+
+# Or use custom data
+python -c "from roformer.data import CustomDataLoader; chunks = CustomDataLoader.from_file('your_data.txt')"
 ```
 
-This will:
-1. Build a vocabulary from sample texts
-2. Create and train the model
-3. Save the checkpoint to `roformer_llm.pt`
-4. Test text generation
+### 2. Configure Training
 
-### Interactive Demo
+Edit `configs/default.yaml` to customize:
+- Model architecture (layers, dimensions, heads)
+- Training parameters (batch size, learning rate, epochs)
+- Data settings (max length, splits)
+- Hardware configuration
+
+### 3. Train Model
 
 ```bash
-python demo.py
+# Deep training with professional loop
+python scripts/train_deep.py
+
+# Or use fast training for quick experiments
+python scripts/train_fast.py
 ```
 
-### Batch Generation
+### 4. Evaluate
 
 ```bash
-python demo.py --batch
+# Run benchmarks
+python scripts/benchmarks.py
 ```
 
-## Model Architecture
+### 5. Generate Text
 
-The model consists of:
+```bash
+# Interactive demo
+python scripts/demo.py
 
-1. **Token Embeddings**: Convert token IDs to dense vectors
-2. **Transformer Blocks**: Multiple layers of:
-   - Multi-Head Attention with RoPE
-   - Feed-Forward Network
-   - Layer Normalization
-   - Residual Connections
-3. **Language Modeling Head**: Project to vocabulary logits
+# Batch generation
+python scripts/demo.py --batch
+```
+
+## Configuration
+
+The project uses YAML configuration files for easy customization:
+
+```yaml
+model:
+  embed_dim: 512
+  num_heads: 8
+  num_layers: 8
+  max_position_embeddings: 512
+
+training:
+  batch_size: 16
+  num_epochs: 50
+  learning_rate: 3e-5
+
+data:
+  data_path: "data/raw/shakespeare.txt"
+  max_length: 256
+```
+
+## Hardware Optimization
+
+The system automatically detects and optimizes for available hardware:
+
+- **CUDA (NVIDIA)**: Full GPU acceleration
+- **MPS (Apple Silicon)**: Metal Performance Shaders
+- **CPU**: Fallback with optimized settings
+
+Run hardware detection:
+```bash
+python -c "from roformer.utils import detect_hardware; detect_hardware()"
+```
+
+## API Usage
+
+```python
+from roformer import RoFormerLLM, RoFormerLLMConfig, WordTokenizer
+from roformer.utils import Config
+
+# Load configuration
+config = Config.from_yaml("configs/default.yaml")
+
+# Create model
+model = RoFormerLLM(
+    vocab_size=config.model.vocab_size,
+    embed_dim=config.model.embed_dim,
+    num_heads=config.model.num_heads,
+    num_layers=config.model.num_layers
+)
+
+# Generate text
+tokenizer = WordTokenizer(texts)
+prompt_ids = tokenizer.encode("To be, or not to be")
+generated = model.generate(prompt_ids, max_new_tokens=50)
+```
+
+## Benchmarks
+
+Current benchmark results (12.5M parameter model):
+
+- **Perplexity**: 174.34
+- **Generation Speed**: 40.8 tokens/sec (MPS)
+- **Memory Overhead**: 0.2 MB
+- **Coherence Score**: 0.886
+
+See `BENCHMARK_REPORT.md` for detailed analysis.
 
 ## RoPE Mathematics
 
-The rotary position embedding rotates the query and key vectors:
+The rotary position embedding rotates query and key vectors:
 
 ```
 f_q(x_m, m) = R^d_Θ,m W_q x_m
 f_k(x_n, n) = R^d_Θ,n W_k x_n
 ```
 
-Where R^d_Θ,m is the rotation matrix:
+Where R^d_Θ,m is the rotation matrix with θ_i = 10000^(-2(i-1)/d).
 
-```
-R^d_Θ,m = diag(Rotation(mθ_1), Rotation(mθ_2), ..., Rotation(mθ_d/2))
-```
-
-With θ_i = 10000^(-2(i-1)/d)
-
-The attention computation becomes:
-
+The attention computation depends only on relative position:
 ```
 q_m^T k_n = x_m^T W_q^T R^d_Θ,n-m W_k x_n
 ```
 
-This depends only on relative position (n-m).
+## Development
 
-## Configuration
+```bash
+# Run tests
+pytest tests/
 
-Default configuration:
-- Embedding dimension: 256
-- Attention heads: 8
-- Transformer layers: 6
-- Feed-forward dimension: 1024
-- Maximum sequence length: 512
-- Dropout: 0.1
+# Format code
+black src/ scripts/
 
-## Example
-
-```python
-from model import RoFormerLLM
-from tokenizer import SimpleTokenizer
-
-# Create tokenizer
-tokenizer = SimpleTokenizer(texts)
-
-# Create model
-model = RoFormerLLM(
-    vocab_size=tokenizer.get_vocab_size(),
-    embed_dim=256,
-    num_heads=8,
-    num_layers=6,
-    max_position_embeddings=512
-)
-
-# Generate text
-prompt = "The attention mechanism"
-prompt_ids = tokenizer.encode(prompt).unsqueeze(0)
-generated = model.generate(prompt_ids, max_new_tokens=50)
-text = tokenizer.decode(generated[0])
+# Type check
+mypy src/
 ```
 
 ## References
