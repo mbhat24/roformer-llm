@@ -1,0 +1,1227 @@
+2026-04-22 07:25:31 - roformer - INFO - Using device: mps
+2026-04-22 07:25:31 - roformer - INFO - Loading training data...
+2026-04-22 07:25:31 - roformer - INFO - Loaded 3764 text chunks
+2026-04-22 07:25:31 - roformer - INFO - Tokenizer built with 5000 words
+2026-04-22 07:25:31 - roformer - INFO - Train: 3387, Val: 188, Test: 189
+2026-04-22 07:25:31 - roformer - INFO - Creating model...
+2026-04-22 07:25:32 - roformer - INFO - Total parameters: 27,780,096
+2026-04-22 07:25:32 - roformer - INFO - Trainable parameters: 27,780,096
+2026-04-22 07:25:32 - roformer - INFO - Optimizer: adamw
+2026-04-22 07:25:32 - roformer - INFO - Scheduler: cosine
+2026-04-22 07:25:32 - roformer - INFO - Trainer initialized successfully
+2026-04-22 07:25:32 - roformer - INFO - Starting training...
+2026-04-22 07:25:32 - roformer - INFO - Total epochs: 50
+2026-04-22 07:25:32 - roformer - INFO - Total steps: 10600
+2026-04-22 07:26:22 - roformer - INFO - Step 10 - loss: 7.3501, lr: 0.0000, epoch: 1
+2026-04-22 07:26:33 - roformer - INFO - Step 20 - loss: 7.0773, lr: 0.0000, epoch: 1
+2026-04-22 07:26:46 - roformer - INFO - Step 30 - loss: 6.9161, lr: 0.0000, epoch: 1
+2026-04-22 07:27:03 - roformer - INFO - Step 40 - loss: 6.8219, lr: 0.0000, epoch: 1
+2026-04-22 07:27:36 - roformer - INFO - Step 50 - loss: 6.5783, lr: 0.0000, epoch: 1
+2026-04-22 07:28:41 - roformer - INFO - Step 60 - loss: 6.6258, lr: 0.0000, epoch: 1
+2026-04-22 07:29:04 - roformer - INFO - Step 70 - loss: 6.4756, lr: 0.0000, epoch: 1
+2026-04-22 07:29:14 - roformer - INFO - Step 80 - loss: 6.3603, lr: 0.0000, epoch: 1
+2026-04-22 07:29:25 - roformer - INFO - Step 90 - loss: 6.1769, lr: 0.0000, epoch: 1
+2026-04-22 07:29:39 - roformer - INFO - Step 100 - loss: 6.1675, lr: 0.0000, epoch: 1
+2026-04-22 07:30:13 - roformer - INFO - Step 110 - loss: 6.1042, lr: 0.0000, epoch: 1
+2026-04-22 07:31:19 - roformer - INFO - Step 120 - loss: 6.1251, lr: 0.0000, epoch: 1
+2026-04-22 07:31:41 - roformer - INFO - Step 130 - loss: 6.0307, lr: 0.0000, epoch: 1
+2026-04-22 07:31:58 - roformer - INFO - Step 140 - loss: 5.8617, lr: 0.0000, epoch: 1
+2026-04-22 07:32:13 - roformer - INFO - Step 150 - loss: 5.8962, lr: 0.0000, epoch: 1
+2026-04-22 07:32:39 - roformer - INFO - Step 160 - loss: 5.9690, lr: 0.0000, epoch: 1
+2026-04-22 07:33:05 - roformer - INFO - Step 170 - loss: 5.9644, lr: 0.0000, epoch: 1
+2026-04-22 07:34:48 - roformer - INFO - Step 180 - loss: 5.7318, lr: 0.0000, epoch: 1
+2026-04-22 07:35:02 - roformer - INFO - Step 190 - loss: 5.9143, lr: 0.0000, epoch: 1
+2026-04-22 07:35:17 - roformer - INFO - Step 200 - loss: 5.9053, lr: 0.0000, epoch: 1
+2026-04-22 07:35:32 - roformer - INFO - Step 210 - loss: 5.7715, lr: 0.0000, epoch: 1
+2026-04-22 07:35:59 - roformer - INFO - Epoch 1 - Train Loss: 6.3348
+2026-04-22 07:36:32 - roformer - INFO - Epoch 1 - Val Loss: 5.7770
+2026-04-22 07:36:32 - roformer - INFO - New best model! Loss: 5.7770
+2026-04-22 07:37:06 - roformer - INFO - Step 220 - loss: 5.7828, lr: 0.0000, epoch: 2
+2026-04-22 07:37:24 - roformer - INFO - Step 230 - loss: 5.7865, lr: 0.0000, epoch: 2
+2026-04-22 07:38:49 - roformer - INFO - Step 240 - loss: 5.7440, lr: 0.0000, epoch: 2
+2026-04-22 07:38:58 - roformer - INFO - Step 250 - loss: 5.7231, lr: 0.0000, epoch: 2
+2026-04-22 07:39:09 - roformer - INFO - Step 260 - loss: 5.6999, lr: 0.0000, epoch: 2
+2026-04-22 07:39:41 - roformer - INFO - Step 270 - loss: 5.7764, lr: 0.0000, epoch: 2
+2026-04-22 07:39:56 - roformer - INFO - Step 280 - loss: 5.7809, lr: 0.0000, epoch: 2
+2026-04-22 07:40:22 - roformer - INFO - Step 290 - loss: 5.6882, lr: 0.0000, epoch: 2
+2026-04-22 07:40:40 - roformer - INFO - Step 300 - loss: 5.7736, lr: 0.0000, epoch: 2
+2026-04-22 07:41:04 - roformer - INFO - Step 310 - loss: 5.7472, lr: 0.0000, epoch: 2
+2026-04-22 07:41:42 - roformer - INFO - Step 320 - loss: 5.7181, lr: 0.0000, epoch: 2
+2026-04-22 07:42:01 - roformer - INFO - Step 330 - loss: 5.6796, lr: 0.0000, epoch: 2
+2026-04-22 07:42:21 - roformer - INFO - Step 340 - loss: 5.5190, lr: 0.0000, epoch: 2
+2026-04-22 07:42:41 - roformer - INFO - Step 350 - loss: 5.6347, lr: 0.0000, epoch: 2
+2026-04-22 07:53:03 - roformer - INFO - Step 360 - loss: 5.6025, lr: 0.0000, epoch: 2
+2026-04-22 07:53:53 - roformer - INFO - Step 370 - loss: 5.5889, lr: 0.0000, epoch: 2
+2026-04-22 07:54:07 - roformer - INFO - Step 380 - loss: 5.6961, lr: 0.0000, epoch: 2
+2026-04-22 07:54:23 - roformer - INFO - Step 390 - loss: 5.6419, lr: 0.0000, epoch: 2
+2026-04-22 07:54:36 - roformer - INFO - Step 400 - loss: 5.4566, lr: 0.0000, epoch: 2
+2026-04-22 07:56:23 - roformer - INFO - Step 410 - loss: 5.6392, lr: 0.0000, epoch: 2
+2026-04-22 07:56:46 - roformer - INFO - Step 420 - loss: 5.5624, lr: 0.0000, epoch: 2
+2026-04-22 07:57:12 - roformer - INFO - Epoch 2 - Train Loss: 5.6773
+2026-04-22 07:57:45 - roformer - INFO - Epoch 2 - Val Loss: 5.5477
+2026-04-22 07:57:45 - roformer - INFO - New best model! Loss: 5.5477
+2026-04-22 07:58:15 - roformer - INFO - Step 430 - loss: 5.4750, lr: 0.0000, epoch: 3
+2026-04-22 07:58:27 - roformer - INFO - Step 440 - loss: 5.5536, lr: 0.0000, epoch: 3
+2026-04-22 08:16:27 - roformer - INFO - Step 450 - loss: 5.5708, lr: 0.0000, epoch: 3
+2026-04-22 08:16:38 - roformer - INFO - Step 460 - loss: 5.4514, lr: 0.0000, epoch: 3
+2026-04-22 08:16:50 - roformer - INFO - Step 470 - loss: 5.4757, lr: 0.0000, epoch: 3
+2026-04-22 08:17:00 - roformer - INFO - Step 480 - loss: 5.4338, lr: 0.0000, epoch: 3
+2026-04-22 08:17:09 - roformer - INFO - Step 490 - loss: 5.4499, lr: 0.0000, epoch: 3
+2026-04-22 08:17:19 - roformer - INFO - Step 500 - loss: 5.4156, lr: 0.0000, epoch: 3
+2026-04-22 08:17:29 - roformer - INFO - Step 510 - loss: 5.6064, lr: 0.0000, epoch: 3
+2026-04-22 08:17:44 - roformer - INFO - Step 520 - loss: 5.4899, lr: 0.0000, epoch: 3
+2026-04-22 08:18:00 - roformer - INFO - Step 530 - loss: 5.4406, lr: 0.0000, epoch: 3
+2026-04-22 08:18:11 - roformer - INFO - Step 540 - loss: 5.5865, lr: 0.0000, epoch: 3
+2026-04-22 08:18:25 - roformer - INFO - Step 550 - loss: 5.4438, lr: 0.0000, epoch: 3
+2026-04-22 08:18:35 - roformer - INFO - Step 560 - loss: 5.4044, lr: 0.0000, epoch: 3
+2026-04-22 08:18:44 - roformer - INFO - Step 570 - loss: 5.5184, lr: 0.0000, epoch: 3
+2026-04-22 08:18:53 - roformer - INFO - Step 580 - loss: 5.4408, lr: 0.0000, epoch: 3
+2026-04-22 08:19:01 - roformer - INFO - Step 590 - loss: 5.5055, lr: 0.0000, epoch: 3
+2026-04-22 08:19:10 - roformer - INFO - Step 600 - loss: 5.4957, lr: 0.0000, epoch: 3
+2026-04-22 08:19:19 - roformer - INFO - Step 610 - loss: 5.4415, lr: 0.0000, epoch: 3
+2026-04-22 08:19:28 - roformer - INFO - Step 620 - loss: 5.3948, lr: 0.0000, epoch: 3
+2026-04-22 08:19:38 - roformer - INFO - Step 630 - loss: 5.3835, lr: 0.0000, epoch: 3
+2026-04-22 08:20:04 - roformer - INFO - Epoch 3 - Train Loss: 5.4981
+2026-04-22 08:20:38 - roformer - INFO - Epoch 3 - Val Loss: 5.4077
+2026-04-22 08:20:38 - roformer - INFO - New best model! Loss: 5.4077
+2026-04-22 08:20:48 - roformer - INFO - Step 640 - loss: 5.3294, lr: 0.0000, epoch: 4
+2026-04-22 08:20:56 - roformer - INFO - Step 650 - loss: 5.4577, lr: 0.0000, epoch: 4
+2026-04-22 08:21:09 - roformer - INFO - Step 660 - loss: 5.3577, lr: 0.0000, epoch: 4
+2026-04-22 08:49:11 - roformer - INFO - Step 670 - loss: 5.3721, lr: 0.0000, epoch: 4
+2026-04-22 08:49:26 - roformer - INFO - Step 680 - loss: 5.4075, lr: 0.0000, epoch: 4
+2026-04-22 08:49:41 - roformer - INFO - Step 690 - loss: 5.4203, lr: 0.0000, epoch: 4
+2026-04-22 08:50:00 - roformer - INFO - Step 700 - loss: 5.2856, lr: 0.0000, epoch: 4
+2026-04-22 08:50:48 - roformer - INFO - Step 710 - loss: 5.2920, lr: 0.0000, epoch: 4
+2026-04-22 08:51:02 - roformer - INFO - Step 720 - loss: 5.4562, lr: 0.0000, epoch: 4
+2026-04-22 08:51:23 - roformer - INFO - Step 730 - loss: 5.3947, lr: 0.0000, epoch: 4
+2026-04-22 08:51:36 - roformer - INFO - Step 740 - loss: 5.3934, lr: 0.0000, epoch: 4
+2026-04-22 08:51:55 - roformer - INFO - Step 750 - loss: 5.3063, lr: 0.0000, epoch: 4
+2026-04-22 08:52:45 - roformer - INFO - Step 760 - loss: 5.2904, lr: 0.0000, epoch: 4
+2026-04-22 08:53:07 - roformer - INFO - Step 770 - loss: 5.3498, lr: 0.0000, epoch: 4
+2026-04-22 08:55:32 - roformer - INFO - Step 780 - loss: 5.3287, lr: 0.0000, epoch: 4
+2026-04-22 08:56:08 - roformer - INFO - Step 790 - loss: 5.3715, lr: 0.0000, epoch: 4
+2026-04-22 08:56:28 - roformer - INFO - Step 800 - loss: 5.4099, lr: 0.0000, epoch: 4
+2026-04-22 08:57:02 - roformer - INFO - Step 810 - loss: 5.3324, lr: 0.0000, epoch: 4
+2026-04-22 08:57:15 - roformer - INFO - Step 820 - loss: 5.3787, lr: 0.0000, epoch: 4
+2026-04-22 08:57:53 - roformer - INFO - Step 830 - loss: 5.3596, lr: 0.0000, epoch: 4
+2026-04-22 08:58:06 - roformer - INFO - Step 840 - loss: 5.2599, lr: 0.0000, epoch: 4
+2026-04-22 08:58:38 - roformer - INFO - Epoch 4 - Train Loss: 5.3720
+2026-04-22 08:59:12 - roformer - INFO - Epoch 4 - Val Loss: 5.2970
+2026-04-22 08:59:12 - roformer - INFO - New best model! Loss: 5.2970
+2026-04-22 08:59:24 - roformer - INFO - Step 850 - loss: 5.2995, lr: 0.0000, epoch: 5
+2026-04-22 08:59:34 - roformer - INFO - Step 860 - loss: 5.3636, lr: 0.0000, epoch: 5
+2026-04-22 09:01:22 - roformer - INFO - Step 870 - loss: 5.3218, lr: 0.0000, epoch: 5
+2026-04-22 09:01:38 - roformer - INFO - Step 880 - loss: 5.2650, lr: 0.0000, epoch: 5
+2026-04-22 09:02:08 - roformer - INFO - Step 890 - loss: 5.4115, lr: 0.0000, epoch: 5
+2026-04-22 09:02:34 - roformer - INFO - Step 900 - loss: 5.2900, lr: 0.0000, epoch: 5
+2026-04-22 09:02:47 - roformer - INFO - Step 910 - loss: 5.2969, lr: 0.0000, epoch: 5
+2026-04-22 09:03:00 - roformer - INFO - Step 920 - loss: 5.2177, lr: 0.0000, epoch: 5
+2026-04-22 09:03:13 - roformer - INFO - Step 930 - loss: 5.2618, lr: 0.0000, epoch: 5
+2026-04-22 09:03:27 - roformer - INFO - Step 940 - loss: 5.2166, lr: 0.0000, epoch: 5
+2026-04-22 09:03:48 - roformer - INFO - Step 950 - loss: 5.3926, lr: 0.0000, epoch: 5
+2026-04-22 09:04:08 - roformer - INFO - Step 960 - loss: 5.3355, lr: 0.0000, epoch: 5
+2026-04-22 09:04:23 - roformer - INFO - Step 970 - loss: 5.2489, lr: 0.0000, epoch: 5
+2026-04-22 09:04:38 - roformer - INFO - Step 980 - loss: 5.2382, lr: 0.0000, epoch: 5
+2026-04-22 09:04:54 - roformer - INFO - Step 990 - loss: 5.1280, lr: 0.0000, epoch: 5
+2026-04-22 09:05:10 - roformer - INFO - Step 1000 - loss: 5.2960, lr: 0.0000, epoch: 5
+2026-04-22 09:05:48 - roformer - INFO - Step 1010 - loss: 5.1530, lr: 0.0000, epoch: 5
+2026-04-22 09:06:10 - roformer - INFO - Step 1020 - loss: 5.3396, lr: 0.0000, epoch: 5
+2026-04-22 09:06:24 - roformer - INFO - Step 1030 - loss: 5.2266, lr: 0.0000, epoch: 5
+2026-04-22 09:06:40 - roformer - INFO - Step 1040 - loss: 5.3296, lr: 0.0000, epoch: 5
+2026-04-22 09:06:54 - roformer - INFO - Step 1050 - loss: 5.1965, lr: 0.0000, epoch: 5
+2026-04-22 09:07:10 - roformer - INFO - Step 1060 - loss: 5.2735, lr: 0.0000, epoch: 5
+2026-04-22 09:07:31 - roformer - INFO - Epoch 5 - Train Loss: 5.2694
+2026-04-22 09:08:06 - roformer - INFO - Epoch 5 - Val Loss: 5.2082
+2026-04-22 09:08:06 - roformer - INFO - New best model! Loss: 5.2082
+2026-04-22 09:08:32 - roformer - INFO - Step 1070 - loss: 5.2814, lr: 0.0000, epoch: 6
+2026-04-22 09:08:43 - roformer - INFO - Step 1080 - loss: 5.1468, lr: 0.0000, epoch: 6
+2026-04-22 09:08:58 - roformer - INFO - Step 1090 - loss: 5.1947, lr: 0.0000, epoch: 6
+2026-04-22 09:09:11 - roformer - INFO - Step 1100 - loss: 5.2471, lr: 0.0000, epoch: 6
+2026-04-22 09:09:22 - roformer - INFO - Step 1110 - loss: 5.2556, lr: 0.0000, epoch: 6
+2026-04-22 09:09:34 - roformer - INFO - Step 1120 - loss: 5.2662, lr: 0.0000, epoch: 6
+2026-04-22 09:09:47 - roformer - INFO - Step 1130 - loss: 5.2281, lr: 0.0000, epoch: 6
+2026-04-22 09:09:59 - roformer - INFO - Step 1140 - loss: 5.1747, lr: 0.0000, epoch: 6
+2026-04-22 09:10:14 - roformer - INFO - Step 1150 - loss: 5.0701, lr: 0.0000, epoch: 6
+2026-04-22 09:10:27 - roformer - INFO - Step 1160 - loss: 5.2426, lr: 0.0000, epoch: 6
+2026-04-22 09:10:41 - roformer - INFO - Step 1170 - loss: 5.2247, lr: 0.0000, epoch: 6
+2026-04-22 09:10:57 - roformer - INFO - Step 1180 - loss: 5.0967, lr: 0.0000, epoch: 6
+2026-04-22 09:11:10 - roformer - INFO - Step 1190 - loss: 5.1709, lr: 0.0000, epoch: 6
+2026-04-22 09:11:24 - roformer - INFO - Step 1200 - loss: 5.1957, lr: 0.0000, epoch: 6
+2026-04-22 09:11:38 - roformer - INFO - Step 1210 - loss: 5.2579, lr: 0.0000, epoch: 6
+2026-04-22 09:11:50 - roformer - INFO - Step 1220 - loss: 5.0779, lr: 0.0000, epoch: 6
+2026-04-22 09:12:02 - roformer - INFO - Step 1230 - loss: 5.1442, lr: 0.0000, epoch: 6
+2026-04-22 09:12:15 - roformer - INFO - Step 1240 - loss: 5.2398, lr: 0.0000, epoch: 6
+2026-04-22 09:12:29 - roformer - INFO - Step 1250 - loss: 5.2083, lr: 0.0000, epoch: 6
+2026-04-22 09:12:44 - roformer - INFO - Step 1260 - loss: 5.1262, lr: 0.0000, epoch: 6
+2026-04-22 09:13:12 - roformer - INFO - Step 1270 - loss: 5.1314, lr: 0.0000, epoch: 6
+2026-04-22 09:13:34 - roformer - INFO - Epoch 6 - Train Loss: 5.1848
+2026-04-22 09:14:11 - roformer - INFO - Epoch 6 - Val Loss: 5.1398
+2026-04-22 09:14:11 - roformer - INFO - New best model! Loss: 5.1398
+2026-04-22 09:14:33 - roformer - INFO - Step 1280 - loss: 5.1983, lr: 0.0000, epoch: 7
+2026-04-22 09:14:42 - roformer - INFO - Step 1290 - loss: 5.1016, lr: 0.0000, epoch: 7
+2026-04-22 09:14:56 - roformer - INFO - Step 1300 - loss: 5.2179, lr: 0.0000, epoch: 7
+2026-04-22 09:15:07 - roformer - INFO - Step 1310 - loss: 5.1583, lr: 0.0000, epoch: 7
+2026-04-22 09:15:35 - roformer - INFO - Step 1320 - loss: 5.0805, lr: 0.0000, epoch: 7
+2026-04-22 09:15:48 - roformer - INFO - Step 1330 - loss: 5.1611, lr: 0.0000, epoch: 7
+2026-04-22 09:16:55 - roformer - INFO - Step 1340 - loss: 5.2148, lr: 0.0000, epoch: 7
+2026-04-22 09:17:27 - roformer - INFO - Step 1350 - loss: 5.1119, lr: 0.0000, epoch: 7
+2026-04-22 09:17:42 - roformer - INFO - Step 1360 - loss: 5.0562, lr: 0.0000, epoch: 7
+2026-04-22 09:17:56 - roformer - INFO - Step 1370 - loss: 5.1119, lr: 0.0000, epoch: 7
+2026-04-22 09:18:10 - roformer - INFO - Step 1380 - loss: 5.2475, lr: 0.0000, epoch: 7
+2026-04-22 09:18:32 - roformer - INFO - Step 1390 - loss: 5.1719, lr: 0.0000, epoch: 7
+2026-04-22 09:18:46 - roformer - INFO - Step 1400 - loss: 5.0637, lr: 0.0000, epoch: 7
+2026-04-22 09:19:09 - roformer - INFO - Step 1410 - loss: 5.1210, lr: 0.0000, epoch: 7
+2026-04-22 09:19:21 - roformer - INFO - Step 1420 - loss: 5.0297, lr: 0.0000, epoch: 7
+2026-04-22 09:19:34 - roformer - INFO - Step 1430 - loss: 5.0553, lr: 0.0000, epoch: 7
+2026-04-22 09:19:52 - roformer - INFO - Step 1440 - loss: 5.1081, lr: 0.0000, epoch: 7
+2026-04-22 09:20:14 - roformer - INFO - Step 1450 - loss: 4.9662, lr: 0.0000, epoch: 7
+2026-04-22 09:20:36 - roformer - INFO - Step 1460 - loss: 5.1807, lr: 0.0000, epoch: 7
+2026-04-22 09:20:52 - roformer - INFO - Step 1470 - loss: 5.0568, lr: 0.0000, epoch: 7
+2026-04-22 09:21:10 - roformer - INFO - Step 1480 - loss: 4.9909, lr: 0.0000, epoch: 7
+2026-04-22 09:21:36 - roformer - INFO - Epoch 7 - Train Loss: 5.1143
+2026-04-22 09:22:12 - roformer - INFO - Epoch 7 - Val Loss: 5.0825
+2026-04-22 09:22:12 - roformer - INFO - New best model! Loss: 5.0825
+2026-04-22 09:22:29 - roformer - INFO - Step 1490 - loss: 5.0383, lr: 0.0000, epoch: 8
+2026-04-22 09:22:41 - roformer - INFO - Step 1500 - loss: 5.1435, lr: 0.0000, epoch: 8
+2026-04-22 09:22:54 - roformer - INFO - Step 1510 - loss: 5.1282, lr: 0.0000, epoch: 8
+2026-04-22 09:23:29 - roformer - INFO - Step 1520 - loss: 5.1182, lr: 0.0000, epoch: 8
+2026-04-22 09:23:53 - roformer - INFO - Step 1530 - loss: 5.0834, lr: 0.0000, epoch: 8
+2026-04-22 09:24:07 - roformer - INFO - Step 1540 - loss: 4.9202, lr: 0.0000, epoch: 8
+2026-04-22 09:24:23 - roformer - INFO - Step 1550 - loss: 5.0029, lr: 0.0000, epoch: 8
+2026-04-22 09:24:59 - roformer - INFO - Step 1560 - loss: 5.0164, lr: 0.0000, epoch: 8
+2026-04-22 09:25:20 - roformer - INFO - Step 1570 - loss: 4.9832, lr: 0.0000, epoch: 8
+2026-04-22 09:25:40 - roformer - INFO - Step 1580 - loss: 5.0290, lr: 0.0000, epoch: 8
+2026-04-22 09:25:55 - roformer - INFO - Step 1590 - loss: 5.1013, lr: 0.0000, epoch: 8
+2026-04-22 09:26:10 - roformer - INFO - Step 1600 - loss: 5.0148, lr: 0.0000, epoch: 8
+2026-04-22 09:26:27 - roformer - INFO - Step 1610 - loss: 5.0998, lr: 0.0000, epoch: 8
+2026-04-22 09:27:08 - roformer - INFO - Step 1620 - loss: 5.0753, lr: 0.0000, epoch: 8
+2026-04-22 09:30:11 - roformer - INFO - Step 1630 - loss: 5.1693, lr: 0.0000, epoch: 8
+2026-04-22 09:30:41 - roformer - INFO - Step 1640 - loss: 4.9155, lr: 0.0000, epoch: 8
+2026-04-22 09:30:56 - roformer - INFO - Step 1650 - loss: 5.0331, lr: 0.0000, epoch: 8
+2026-04-22 09:49:18 - roformer - INFO - Step 1660 - loss: 5.0275, lr: 0.0000, epoch: 8
+2026-04-22 10:21:27 - roformer - INFO - Step 1670 - loss: 4.9518, lr: 0.0000, epoch: 8
+2026-04-22 10:21:47 - roformer - INFO - Step 1680 - loss: 4.9932, lr: 0.0000, epoch: 8
+2026-04-22 10:21:57 - roformer - INFO - Step 1690 - loss: 5.0549, lr: 0.0000, epoch: 8
+2026-04-22 11:32:09 - roformer - INFO - Epoch 8 - Train Loss: 5.0553
+2026-04-22 12:23:57 - roformer - INFO - Epoch 8 - Val Loss: 5.0343
+2026-04-22 12:23:57 - roformer - INFO - New best model! Loss: 5.0343
+2026-04-22 12:49:49 - roformer - INFO - Step 1700 - loss: 5.0398, lr: 0.0000, epoch: 9
+2026-04-22 12:50:03 - roformer - INFO - Step 1710 - loss: 5.0033, lr: 0.0000, epoch: 9
+2026-04-22 13:05:16 - roformer - INFO - Step 1720 - loss: 4.9628, lr: 0.0000, epoch: 9
+2026-04-22 13:22:30 - roformer - INFO - Step 1730 - loss: 4.9920, lr: 0.0000, epoch: 9
+2026-04-22 13:22:48 - roformer - INFO - Step 1740 - loss: 5.1018, lr: 0.0000, epoch: 9
+2026-04-22 13:23:11 - roformer - INFO - Step 1750 - loss: 4.9644, lr: 0.0000, epoch: 9
+2026-04-22 13:23:25 - roformer - INFO - Step 1760 - loss: 5.0586, lr: 0.0000, epoch: 9
+2026-04-22 13:34:22 - roformer - INFO - Step 1770 - loss: 5.0327, lr: 0.0000, epoch: 9
+2026-04-22 13:34:31 - roformer - INFO - Step 1780 - loss: 4.9849, lr: 0.0000, epoch: 9
+2026-04-22 13:34:41 - roformer - INFO - Step 1790 - loss: 5.0949, lr: 0.0000, epoch: 9
+2026-04-22 13:34:49 - roformer - INFO - Step 1800 - loss: 4.9549, lr: 0.0000, epoch: 9
+2026-04-22 13:35:01 - roformer - INFO - Step 1810 - loss: 5.0401, lr: 0.0000, epoch: 9
+2026-04-22 13:35:13 - roformer - INFO - Step 1820 - loss: 4.9292, lr: 0.0000, epoch: 9
+2026-04-22 13:52:44 - roformer - INFO - Step 1830 - loss: 5.0347, lr: 0.0000, epoch: 9
+2026-04-22 14:09:16 - roformer - INFO - Step 1840 - loss: 5.1399, lr: 0.0000, epoch: 9
+2026-04-22 14:09:28 - roformer - INFO - Step 1850 - loss: 5.0448, lr: 0.0000, epoch: 9
+2026-04-22 14:09:47 - roformer - INFO - Step 1860 - loss: 4.9984, lr: 0.0000, epoch: 9
+2026-04-22 14:10:00 - roformer - INFO - Step 1870 - loss: 4.9638, lr: 0.0000, epoch: 9
+2026-04-22 14:10:20 - roformer - INFO - Step 1880 - loss: 5.0037, lr: 0.0000, epoch: 9
+2026-04-22 14:10:36 - roformer - INFO - Step 1890 - loss: 4.9103, lr: 0.0000, epoch: 9
+2026-04-22 14:10:54 - roformer - INFO - Step 1900 - loss: 4.9803, lr: 0.0000, epoch: 9
+2026-04-22 14:11:25 - roformer - INFO - Epoch 9 - Train Loss: 5.0037
+2026-04-22 14:12:06 - roformer - INFO - Epoch 9 - Val Loss: 4.9948
+2026-04-22 14:12:06 - roformer - INFO - New best model! Loss: 4.9948
+2026-04-22 14:12:16 - roformer - INFO - Step 1910 - loss: 5.0060, lr: 0.0000, epoch: 10
+2026-04-22 14:12:27 - roformer - INFO - Step 1920 - loss: 5.0824, lr: 0.0000, epoch: 10
+2026-04-22 14:12:43 - roformer - INFO - Step 1930 - loss: 5.0986, lr: 0.0000, epoch: 10
+2026-04-22 14:45:52 - roformer - INFO - Step 1940 - loss: 5.0086, lr: 0.0000, epoch: 10
+2026-04-22 14:46:10 - roformer - INFO - Step 1950 - loss: 4.9060, lr: 0.0000, epoch: 10
+2026-04-22 15:01:14 - roformer - INFO - Step 1960 - loss: 4.9233, lr: 0.0000, epoch: 10
+2026-04-22 15:17:09 - roformer - INFO - Step 1970 - loss: 4.9517, lr: 0.0000, epoch: 10
+2026-04-22 15:33:04 - roformer - INFO - Step 1980 - loss: 4.9113, lr: 0.0000, epoch: 10
+2026-04-22 15:33:14 - roformer - INFO - Step 1990 - loss: 4.9925, lr: 0.0000, epoch: 10
+2026-04-22 15:50:00 - roformer - INFO - Step 2000 - loss: 4.9238, lr: 0.0000, epoch: 10
+2026-04-22 15:50:16 - roformer - INFO - Step 2010 - loss: 4.9769, lr: 0.0000, epoch: 10
+2026-04-22 16:06:01 - roformer - INFO - Step 2020 - loss: 5.0798, lr: 0.0000, epoch: 10
+2026-04-22 16:13:03 - roformer - INFO - Step 2030 - loss: 4.8996, lr: 0.0000, epoch: 10
+2026-04-22 16:13:13 - roformer - INFO - Step 2040 - loss: 5.0922, lr: 0.0000, epoch: 10
+2026-04-22 16:13:22 - roformer - INFO - Step 2050 - loss: 4.9873, lr: 0.0000, epoch: 10
+2026-04-22 16:13:33 - roformer - INFO - Step 2060 - loss: 4.9483, lr: 0.0000, epoch: 10
+2026-04-22 16:29:18 - roformer - INFO - Step 2070 - loss: 5.0793, lr: 0.0000, epoch: 10
+2026-04-22 16:29:31 - roformer - INFO - Step 2080 - loss: 4.9264, lr: 0.0000, epoch: 10
+2026-04-22 16:29:41 - roformer - INFO - Step 2090 - loss: 4.9338, lr: 0.0000, epoch: 10
+2026-04-22 16:29:50 - roformer - INFO - Step 2100 - loss: 4.8523, lr: 0.0000, epoch: 10
+2026-04-22 16:30:15 - roformer - INFO - Step 2110 - loss: 5.1419, lr: 0.0000, epoch: 10
+2026-04-22 16:30:29 - roformer - INFO - Step 2120 - loss: 5.0280, lr: 0.0000, epoch: 10
+2026-04-22 16:30:49 - roformer - INFO - Epoch 10 - Train Loss: 4.9591
+2026-04-22 16:31:42 - roformer - INFO - Epoch 10 - Val Loss: 4.9583
+2026-04-22 16:31:42 - roformer - INFO - New best model! Loss: 4.9583
+2026-04-22 16:32:15 - roformer - INFO - Step 2130 - loss: 4.8994, lr: 0.0000, epoch: 11
+2026-04-22 16:32:25 - roformer - INFO - Step 2140 - loss: 5.0110, lr: 0.0000, epoch: 11
+2026-04-22 16:32:46 - roformer - INFO - Step 2150 - loss: 4.9125, lr: 0.0000, epoch: 11
+2026-04-22 16:33:02 - roformer - INFO - Step 2160 - loss: 4.8485, lr: 0.0000, epoch: 11
+2026-04-22 16:33:12 - roformer - INFO - Step 2170 - loss: 4.9200, lr: 0.0000, epoch: 11
+2026-04-22 16:33:29 - roformer - INFO - Step 2180 - loss: 4.9238, lr: 0.0000, epoch: 11
+2026-04-22 16:33:45 - roformer - INFO - Step 2190 - loss: 4.9351, lr: 0.0000, epoch: 11
+2026-04-22 16:34:02 - roformer - INFO - Step 2200 - loss: 4.8142, lr: 0.0000, epoch: 11
+2026-04-22 16:34:57 - roformer - INFO - Step 2210 - loss: 4.8832, lr: 0.0000, epoch: 11
+2026-04-22 16:35:18 - roformer - INFO - Step 2220 - loss: 4.8516, lr: 0.0000, epoch: 11
+2026-04-22 16:36:03 - roformer - INFO - Step 2230 - loss: 4.7915, lr: 0.0000, epoch: 11
+2026-04-22 16:40:29 - roformer - INFO - Step 2240 - loss: 4.9321, lr: 0.0000, epoch: 11
+2026-04-22 16:41:44 - roformer - INFO - Step 2250 - loss: 4.8452, lr: 0.0000, epoch: 11
+2026-04-22 16:42:21 - roformer - INFO - Step 2260 - loss: 4.9291, lr: 0.0000, epoch: 11
+2026-04-22 16:42:37 - roformer - INFO - Step 2270 - loss: 4.9257, lr: 0.0000, epoch: 11
+2026-04-22 16:43:38 - roformer - INFO - Step 2280 - loss: 4.9440, lr: 0.0000, epoch: 11
+2026-04-22 16:43:52 - roformer - INFO - Step 2290 - loss: 4.8942, lr: 0.0000, epoch: 11
+2026-04-22 16:44:20 - roformer - INFO - Step 2300 - loss: 4.8530, lr: 0.0000, epoch: 11
+2026-04-22 16:45:44 - roformer - INFO - Step 2310 - loss: 4.9384, lr: 0.0000, epoch: 11
+2026-04-22 16:46:22 - roformer - INFO - Step 2320 - loss: 4.9577, lr: 0.0000, epoch: 11
+2026-04-22 16:46:37 - roformer - INFO - Step 2330 - loss: 4.9161, lr: 0.0000, epoch: 11
+2026-04-22 16:47:03 - roformer - INFO - Epoch 11 - Train Loss: 4.9174
+2026-04-22 16:47:36 - roformer - INFO - Epoch 11 - Val Loss: 4.9282
+2026-04-22 16:47:36 - roformer - INFO - New best model! Loss: 4.9282
+2026-04-22 16:47:56 - roformer - INFO - Step 2340 - loss: 4.8678, lr: 0.0000, epoch: 12
+2026-04-22 16:48:08 - roformer - INFO - Step 2350 - loss: 4.8820, lr: 0.0000, epoch: 12
+2026-04-22 16:48:19 - roformer - INFO - Step 2360 - loss: 4.9628, lr: 0.0000, epoch: 12
+2026-04-22 16:48:32 - roformer - INFO - Step 2370 - loss: 4.8507, lr: 0.0000, epoch: 12
+2026-04-22 16:48:42 - roformer - INFO - Step 2380 - loss: 4.9128, lr: 0.0000, epoch: 12
+2026-04-22 16:48:59 - roformer - INFO - Step 2390 - loss: 4.7656, lr: 0.0000, epoch: 12
+2026-04-22 16:49:54 - roformer - INFO - Step 2400 - loss: 4.7553, lr: 0.0000, epoch: 12
+2026-04-22 16:50:42 - roformer - INFO - Step 2410 - loss: 4.9187, lr: 0.0000, epoch: 12
+2026-04-22 16:51:14 - roformer - INFO - Step 2420 - loss: 4.8732, lr: 0.0000, epoch: 12
+2026-04-22 16:52:00 - roformer - INFO - Step 2430 - loss: 4.7754, lr: 0.0000, epoch: 12
+2026-04-22 16:52:24 - roformer - INFO - Step 2440 - loss: 4.8332, lr: 0.0000, epoch: 12
+2026-04-22 16:52:53 - roformer - INFO - Step 2450 - loss: 4.9507, lr: 0.0000, epoch: 12
+2026-04-22 16:53:19 - roformer - INFO - Step 2460 - loss: 4.8757, lr: 0.0000, epoch: 12
+2026-04-22 16:53:43 - roformer - INFO - Step 2470 - loss: 4.8289, lr: 0.0000, epoch: 12
+2026-04-22 16:54:03 - roformer - INFO - Step 2480 - loss: 4.9345, lr: 0.0000, epoch: 12
+2026-04-22 16:54:25 - roformer - INFO - Step 2490 - loss: 4.8304, lr: 0.0000, epoch: 12
+2026-04-22 16:54:48 - roformer - INFO - Step 2500 - loss: 4.8445, lr: 0.0000, epoch: 12
+2026-04-22 16:55:10 - roformer - INFO - Step 2510 - loss: 4.9099, lr: 0.0000, epoch: 12
+2026-04-22 16:55:32 - roformer - INFO - Step 2520 - loss: 4.9107, lr: 0.0000, epoch: 12
+2026-04-22 16:55:53 - roformer - INFO - Step 2530 - loss: 4.8850, lr: 0.0000, epoch: 12
+2026-04-22 16:56:26 - roformer - INFO - Step 2540 - loss: 4.9100, lr: 0.0000, epoch: 12
+2026-04-22 16:56:57 - roformer - INFO - Epoch 12 - Train Loss: 4.8797
+2026-04-22 16:57:30 - roformer - INFO - Epoch 12 - Val Loss: 4.9007
+2026-04-22 16:57:30 - roformer - INFO - New best model! Loss: 4.9007
+2026-04-22 16:58:08 - roformer - INFO - Step 2550 - loss: 4.9001, lr: 0.0000, epoch: 13
+2026-04-22 16:58:23 - roformer - INFO - Step 2560 - loss: 4.8394, lr: 0.0000, epoch: 13
+2026-04-22 16:58:40 - roformer - INFO - Step 2570 - loss: 4.6532, lr: 0.0000, epoch: 13
+2026-04-22 16:58:57 - roformer - INFO - Step 2580 - loss: 4.8192, lr: 0.0000, epoch: 13
+2026-04-22 16:59:14 - roformer - INFO - Step 2590 - loss: 4.7764, lr: 0.0000, epoch: 13
+2026-04-22 16:59:30 - roformer - INFO - Step 2600 - loss: 4.8135, lr: 0.0000, epoch: 13
+2026-04-22 16:59:49 - roformer - INFO - Step 2610 - loss: 4.8642, lr: 0.0000, epoch: 13
+2026-04-22 17:00:08 - roformer - INFO - Step 2620 - loss: 4.6788, lr: 0.0000, epoch: 13
+2026-04-22 17:00:30 - roformer - INFO - Step 2630 - loss: 4.7636, lr: 0.0000, epoch: 13
+2026-04-22 17:00:54 - roformer - INFO - Step 2640 - loss: 4.7206, lr: 0.0000, epoch: 13
+2026-04-22 17:01:16 - roformer - INFO - Step 2650 - loss: 4.8454, lr: 0.0000, epoch: 13
+2026-04-22 17:01:37 - roformer - INFO - Step 2660 - loss: 4.7683, lr: 0.0000, epoch: 13
+2026-04-22 17:02:03 - roformer - INFO - Step 2670 - loss: 4.8092, lr: 0.0000, epoch: 13
+2026-04-22 17:02:23 - roformer - INFO - Step 2680 - loss: 4.8318, lr: 0.0000, epoch: 13
+2026-04-22 17:02:43 - roformer - INFO - Step 2690 - loss: 4.9079, lr: 0.0000, epoch: 13
+2026-04-22 17:03:05 - roformer - INFO - Step 2700 - loss: 4.9436, lr: 0.0000, epoch: 13
+2026-04-22 17:03:23 - roformer - INFO - Step 2710 - loss: 4.9124, lr: 0.0000, epoch: 13
+2026-04-22 17:03:40 - roformer - INFO - Step 2720 - loss: 4.8188, lr: 0.0000, epoch: 13
+2026-04-22 17:03:56 - roformer - INFO - Step 2730 - loss: 4.7148, lr: 0.0000, epoch: 13
+2026-04-22 17:04:34 - roformer - INFO - Step 2740 - loss: 4.9577, lr: 0.0000, epoch: 13
+2026-04-22 17:05:01 - roformer - INFO - Step 2750 - loss: 4.8122, lr: 0.0000, epoch: 13
+2026-04-22 17:05:36 - roformer - INFO - Epoch 13 - Train Loss: 4.8462
+2026-04-22 17:06:17 - roformer - INFO - Epoch 13 - Val Loss: 4.8755
+2026-04-22 17:06:17 - roformer - INFO - New best model! Loss: 4.8755
+2026-04-22 17:06:37 - roformer - INFO - Step 2760 - loss: 4.8381, lr: 0.0000, epoch: 14
+2026-04-22 17:06:51 - roformer - INFO - Step 2770 - loss: 4.8380, lr: 0.0000, epoch: 14
+2026-04-22 17:07:09 - roformer - INFO - Step 2780 - loss: 4.8312, lr: 0.0000, epoch: 14
+2026-04-22 17:07:28 - roformer - INFO - Step 2790 - loss: 4.7784, lr: 0.0000, epoch: 14
+2026-04-22 17:07:50 - roformer - INFO - Step 2800 - loss: 4.8081, lr: 0.0000, epoch: 14
+2026-04-22 17:08:09 - roformer - INFO - Step 2810 - loss: 4.8615, lr: 0.0000, epoch: 14
+2026-04-22 17:08:27 - roformer - INFO - Step 2820 - loss: 4.8367, lr: 0.0000, epoch: 14
+2026-04-22 17:08:55 - roformer - INFO - Step 2830 - loss: 4.8203, lr: 0.0000, epoch: 14
+2026-04-22 17:09:13 - roformer - INFO - Step 2840 - loss: 4.8423, lr: 0.0000, epoch: 14
+2026-04-22 17:09:33 - roformer - INFO - Step 2850 - loss: 4.7592, lr: 0.0000, epoch: 14
+2026-04-22 17:19:35 - roformer - INFO - Step 2860 - loss: 4.8551, lr: 0.0000, epoch: 14
+2026-04-22 17:19:45 - roformer - INFO - Step 2870 - loss: 4.9286, lr: 0.0000, epoch: 14
+2026-04-22 17:20:10 - roformer - INFO - Step 2880 - loss: 4.8153, lr: 0.0000, epoch: 14
+2026-04-22 17:20:26 - roformer - INFO - Step 2890 - loss: 4.7756, lr: 0.0000, epoch: 14
+2026-04-22 17:20:59 - roformer - INFO - Step 2900 - loss: 4.9049, lr: 0.0000, epoch: 14
+2026-04-22 17:21:44 - roformer - INFO - Step 2910 - loss: 4.8488, lr: 0.0000, epoch: 14
+2026-04-22 17:22:08 - roformer - INFO - Step 2920 - loss: 4.7714, lr: 0.0000, epoch: 14
+2026-04-22 17:22:45 - roformer - INFO - Step 2930 - loss: 4.9367, lr: 0.0000, epoch: 14
+2026-04-22 17:23:21 - roformer - INFO - Step 2940 - loss: 4.7651, lr: 0.0000, epoch: 14
+2026-04-22 17:23:57 - roformer - INFO - Step 2950 - loss: 4.8571, lr: 0.0000, epoch: 14
+2026-04-22 17:24:54 - roformer - INFO - Step 2960 - loss: 4.7735, lr: 0.0000, epoch: 14
+2026-04-22 17:25:35 - roformer - INFO - Epoch 14 - Train Loss: 4.8149
+2026-04-22 17:26:21 - roformer - INFO - Epoch 14 - Val Loss: 4.8555
+2026-04-22 17:26:21 - roformer - INFO - New best model! Loss: 4.8555
+2026-04-22 17:26:40 - roformer - INFO - Step 2970 - loss: 4.8242, lr: 0.0000, epoch: 15
+2026-04-22 17:26:58 - roformer - INFO - Step 2980 - loss: 4.8565, lr: 0.0000, epoch: 15
+2026-04-22 17:27:18 - roformer - INFO - Step 2990 - loss: 4.8335, lr: 0.0000, epoch: 15
+2026-04-22 17:27:41 - roformer - INFO - Step 3000 - loss: 4.7104, lr: 0.0000, epoch: 15
+2026-04-22 17:28:01 - roformer - INFO - Step 3010 - loss: 4.8143, lr: 0.0000, epoch: 15
+2026-04-22 17:28:19 - roformer - INFO - Step 3020 - loss: 4.8030, lr: 0.0000, epoch: 15
+2026-04-22 17:28:36 - roformer - INFO - Step 3030 - loss: 4.7699, lr: 0.0000, epoch: 15
+2026-04-22 17:28:56 - roformer - INFO - Step 3040 - loss: 4.8733, lr: 0.0000, epoch: 15
+2026-04-22 17:29:13 - roformer - INFO - Step 3050 - loss: 4.8501, lr: 0.0000, epoch: 15
+2026-04-22 17:29:30 - roformer - INFO - Step 3060 - loss: 4.7539, lr: 0.0000, epoch: 15
+2026-04-22 17:29:55 - roformer - INFO - Step 3070 - loss: 4.6981, lr: 0.0000, epoch: 15
+2026-04-22 17:30:15 - roformer - INFO - Step 3080 - loss: 4.8408, lr: 0.0000, epoch: 15
+2026-04-22 17:30:31 - roformer - INFO - Step 3090 - loss: 4.7375, lr: 0.0000, epoch: 15
+2026-04-22 17:30:49 - roformer - INFO - Step 3100 - loss: 4.7101, lr: 0.0000, epoch: 15
+2026-04-22 17:31:16 - roformer - INFO - Step 3110 - loss: 4.7924, lr: 0.0000, epoch: 15
+2026-04-22 17:31:39 - roformer - INFO - Step 3120 - loss: 4.8308, lr: 0.0000, epoch: 15
+2026-04-22 17:32:04 - roformer - INFO - Step 3130 - loss: 4.8164, lr: 0.0000, epoch: 15
+2026-04-22 17:32:36 - roformer - INFO - Step 3140 - loss: 4.8580, lr: 0.0000, epoch: 15
+2026-04-22 17:33:06 - roformer - INFO - Step 3150 - loss: 4.7019, lr: 0.0000, epoch: 15
+2026-04-22 17:33:29 - roformer - INFO - Step 3160 - loss: 4.7123, lr: 0.0000, epoch: 15
+2026-04-22 17:33:50 - roformer - INFO - Step 3170 - loss: 4.7356, lr: 0.0000, epoch: 15
+2026-04-22 17:34:32 - roformer - INFO - Step 3180 - loss: 4.7896, lr: 0.0000, epoch: 15
+2026-04-22 17:34:53 - roformer - INFO - Epoch 15 - Train Loss: 4.7859
+2026-04-22 17:35:35 - roformer - INFO - Epoch 15 - Val Loss: 4.8315
+2026-04-22 17:35:35 - roformer - INFO - New best model! Loss: 4.8315
+2026-04-22 17:36:10 - roformer - INFO - Step 3190 - loss: 4.7558, lr: 0.0000, epoch: 16
+2026-04-22 17:36:31 - roformer - INFO - Step 3200 - loss: 4.8163, lr: 0.0000, epoch: 16
+2026-04-22 17:37:01 - roformer - INFO - Step 3210 - loss: 4.7377, lr: 0.0000, epoch: 16
+2026-04-22 17:37:19 - roformer - INFO - Step 3220 - loss: 4.7958, lr: 0.0000, epoch: 16
+2026-04-22 17:37:37 - roformer - INFO - Step 3230 - loss: 4.8276, lr: 0.0000, epoch: 16
+2026-04-22 17:37:56 - roformer - INFO - Step 3240 - loss: 4.7764, lr: 0.0000, epoch: 16
+2026-04-22 17:56:42 - roformer - INFO - Step 3250 - loss: 4.7942, lr: 0.0000, epoch: 16
+2026-04-22 17:57:02 - roformer - INFO - Step 3260 - loss: 4.7032, lr: 0.0000, epoch: 16
+2026-04-22 17:57:19 - roformer - INFO - Step 3270 - loss: 4.7667, lr: 0.0000, epoch: 16
+2026-04-22 18:13:22 - roformer - INFO - Step 3280 - loss: 4.7150, lr: 0.0000, epoch: 16
+2026-04-22 18:13:32 - roformer - INFO - Step 3290 - loss: 4.7764, lr: 0.0000, epoch: 16
+2026-04-22 18:13:45 - roformer - INFO - Step 3300 - loss: 4.7452, lr: 0.0000, epoch: 16
+2026-04-22 18:13:59 - roformer - INFO - Step 3310 - loss: 4.7907, lr: 0.0000, epoch: 16
+2026-04-22 18:14:17 - roformer - INFO - Step 3320 - loss: 4.8084, lr: 0.0000, epoch: 16
+2026-04-22 18:14:49 - roformer - INFO - Step 3330 - loss: 4.7074, lr: 0.0000, epoch: 16
+2026-04-22 18:15:42 - roformer - INFO - Step 3340 - loss: 4.7462, lr: 0.0000, epoch: 16
+2026-04-22 18:16:34 - roformer - INFO - Step 3350 - loss: 4.8113, lr: 0.0000, epoch: 16
+2026-04-22 18:17:23 - roformer - INFO - Step 3360 - loss: 4.6955, lr: 0.0000, epoch: 16
+2026-04-22 18:18:16 - roformer - INFO - Step 3370 - loss: 4.7694, lr: 0.0000, epoch: 16
+2026-04-22 18:19:05 - roformer - INFO - Step 3380 - loss: 4.8482, lr: 0.0000, epoch: 16
+2026-04-22 18:19:53 - roformer - INFO - Step 3390 - loss: 4.8234, lr: 0.0000, epoch: 16
+2026-04-22 18:27:13 - roformer - INFO - Epoch 16 - Train Loss: 4.7584
+2026-04-22 18:27:43 - roformer - INFO - Epoch 16 - Val Loss: 4.8172
+2026-04-22 18:27:43 - roformer - INFO - New best model! Loss: 4.8172
+2026-04-22 18:37:53 - roformer - INFO - Step 3400 - loss: 4.8005, lr: 0.0000, epoch: 17
+2026-04-22 18:38:28 - roformer - INFO - Step 3410 - loss: 4.6909, lr: 0.0000, epoch: 17
+2026-04-22 18:39:03 - roformer - INFO - Step 3420 - loss: 4.5994, lr: 0.0000, epoch: 17
+2026-04-22 18:39:15 - roformer - INFO - Step 3430 - loss: 4.7096, lr: 0.0000, epoch: 17
+2026-04-22 18:39:26 - roformer - INFO - Step 3440 - loss: 4.8201, lr: 0.0000, epoch: 17
+2026-04-22 18:39:35 - roformer - INFO - Step 3450 - loss: 4.8686, lr: 0.0000, epoch: 17
+2026-04-22 18:39:44 - roformer - INFO - Step 3460 - loss: 4.7599, lr: 0.0000, epoch: 17
+2026-04-22 18:39:54 - roformer - INFO - Step 3470 - loss: 4.6952, lr: 0.0000, epoch: 17
+2026-04-22 18:40:04 - roformer - INFO - Step 3480 - loss: 4.7836, lr: 0.0000, epoch: 17
+2026-04-22 18:40:37 - roformer - INFO - Step 3490 - loss: 4.6570, lr: 0.0000, epoch: 17
+2026-04-22 18:40:49 - roformer - INFO - Step 3500 - loss: 4.7137, lr: 0.0000, epoch: 17
+2026-04-22 18:41:03 - roformer - INFO - Step 3510 - loss: 4.8102, lr: 0.0000, epoch: 17
+2026-04-22 18:41:21 - roformer - INFO - Step 3520 - loss: 4.7553, lr: 0.0000, epoch: 17
+2026-04-22 18:41:49 - roformer - INFO - Step 3530 - loss: 4.8564, lr: 0.0000, epoch: 17
+2026-04-22 18:42:08 - roformer - INFO - Step 3540 - loss: 4.7089, lr: 0.0000, epoch: 17
+2026-04-22 18:42:26 - roformer - INFO - Step 3550 - loss: 4.7311, lr: 0.0000, epoch: 17
+2026-04-22 18:42:43 - roformer - INFO - Step 3560 - loss: 4.7416, lr: 0.0000, epoch: 17
+2026-04-22 18:43:00 - roformer - INFO - Step 3570 - loss: 4.7468, lr: 0.0000, epoch: 17
+2026-04-22 18:43:19 - roformer - INFO - Step 3580 - loss: 4.7301, lr: 0.0000, epoch: 17
+2026-04-22 18:43:50 - roformer - INFO - Step 3590 - loss: 4.7217, lr: 0.0000, epoch: 17
+2026-04-22 18:45:02 - roformer - INFO - Step 3600 - loss: 4.7211, lr: 0.0000, epoch: 17
+2026-04-22 18:45:32 - roformer - INFO - Epoch 17 - Train Loss: 4.7339
+2026-04-22 18:46:07 - roformer - INFO - Epoch 17 - Val Loss: 4.7978
+2026-04-22 18:46:07 - roformer - INFO - New best model! Loss: 4.7978
+2026-04-22 18:46:30 - roformer - INFO - Step 3610 - loss: 4.7228, lr: 0.0000, epoch: 18
+2026-04-22 18:46:46 - roformer - INFO - Step 3620 - loss: 4.7820, lr: 0.0000, epoch: 18
+2026-04-22 18:47:02 - roformer - INFO - Step 3630 - loss: 4.7299, lr: 0.0000, epoch: 18
+2026-04-22 18:47:25 - roformer - INFO - Step 3640 - loss: 4.6530, lr: 0.0000, epoch: 18
+2026-04-22 18:47:45 - roformer - INFO - Step 3650 - loss: 4.7761, lr: 0.0000, epoch: 18
+2026-04-22 19:03:29 - roformer - INFO - Step 3660 - loss: 4.6757, lr: 0.0000, epoch: 18
+2026-04-22 19:03:43 - roformer - INFO - Step 3670 - loss: 4.7062, lr: 0.0000, epoch: 18
+2026-04-22 19:03:57 - roformer - INFO - Step 3680 - loss: 4.7399, lr: 0.0000, epoch: 18
+2026-04-22 19:04:16 - roformer - INFO - Step 3690 - loss: 4.6836, lr: 0.0000, epoch: 18
+2026-04-22 19:04:39 - roformer - INFO - Step 3700 - loss: 4.7151, lr: 0.0000, epoch: 18
+2026-04-22 19:05:08 - roformer - INFO - Step 3710 - loss: 4.7548, lr: 0.0000, epoch: 18
+2026-04-22 19:05:44 - roformer - INFO - Step 3720 - loss: 4.6262, lr: 0.0000, epoch: 18
+2026-04-22 19:06:22 - roformer - INFO - Step 3730 - loss: 4.7295, lr: 0.0000, epoch: 18
+2026-04-22 19:06:37 - roformer - INFO - Step 3740 - loss: 4.7453, lr: 0.0000, epoch: 18
+2026-04-22 19:06:47 - roformer - INFO - Step 3750 - loss: 4.8667, lr: 0.0000, epoch: 18
+2026-04-22 19:06:59 - roformer - INFO - Step 3760 - loss: 4.6232, lr: 0.0000, epoch: 18
+2026-04-22 19:07:13 - roformer - INFO - Step 3770 - loss: 4.8346, lr: 0.0000, epoch: 18
+2026-04-22 19:07:44 - roformer - INFO - Step 3780 - loss: 4.6650, lr: 0.0000, epoch: 18
+2026-04-22 19:07:57 - roformer - INFO - Step 3790 - loss: 4.7707, lr: 0.0000, epoch: 18
+2026-04-22 19:08:11 - roformer - INFO - Step 3800 - loss: 4.7320, lr: 0.0000, epoch: 18
+2026-04-22 19:08:31 - roformer - INFO - Step 3810 - loss: 4.5101, lr: 0.0000, epoch: 18
+2026-04-22 19:09:11 - roformer - INFO - Epoch 18 - Train Loss: 4.7091
+2026-04-22 19:09:47 - roformer - INFO - Epoch 18 - Val Loss: 4.7812
+2026-04-22 19:09:47 - roformer - INFO - New best model! Loss: 4.7812
+2026-04-22 19:10:00 - roformer - INFO - Step 3820 - loss: 4.6264, lr: 0.0000, epoch: 19
+2026-04-22 19:10:17 - roformer - INFO - Step 3830 - loss: 4.7161, lr: 0.0000, epoch: 19
+2026-04-22 19:10:34 - roformer - INFO - Step 3840 - loss: 4.7683, lr: 0.0000, epoch: 19
+2026-04-22 19:10:52 - roformer - INFO - Step 3850 - loss: 4.5635, lr: 0.0000, epoch: 19
+2026-04-22 19:11:11 - roformer - INFO - Step 3860 - loss: 4.7707, lr: 0.0000, epoch: 19
+2026-04-22 19:11:28 - roformer - INFO - Step 3870 - loss: 4.7196, lr: 0.0000, epoch: 19
+2026-04-22 19:11:45 - roformer - INFO - Step 3880 - loss: 4.7287, lr: 0.0000, epoch: 19
+2026-04-22 19:12:03 - roformer - INFO - Step 3890 - loss: 4.6721, lr: 0.0000, epoch: 19
+2026-04-22 19:12:22 - roformer - INFO - Step 3900 - loss: 4.6225, lr: 0.0000, epoch: 19
+2026-04-22 19:12:39 - roformer - INFO - Step 3910 - loss: 4.6233, lr: 0.0000, epoch: 19
+2026-04-22 19:12:56 - roformer - INFO - Step 3920 - loss: 4.7478, lr: 0.0000, epoch: 19
+2026-04-22 19:13:15 - roformer - INFO - Step 3930 - loss: 4.7113, lr: 0.0000, epoch: 19
+2026-04-22 19:13:35 - roformer - INFO - Step 3940 - loss: 4.5777, lr: 0.0000, epoch: 19
+2026-04-22 19:13:57 - roformer - INFO - Step 3950 - loss: 4.7035, lr: 0.0000, epoch: 19
+2026-04-22 19:14:24 - roformer - INFO - Step 3960 - loss: 4.6726, lr: 0.0000, epoch: 19
+2026-04-22 19:14:52 - roformer - INFO - Step 3970 - loss: 4.6072, lr: 0.0000, epoch: 19
+2026-04-22 19:15:19 - roformer - INFO - Step 3980 - loss: 4.7603, lr: 0.0000, epoch: 19
+2026-04-22 19:16:03 - roformer - INFO - Step 3990 - loss: 4.7231, lr: 0.0000, epoch: 19
+2026-04-22 19:16:36 - roformer - INFO - Step 4000 - loss: 4.6934, lr: 0.0000, epoch: 19
+2026-04-22 19:17:11 - roformer - INFO - Step 4010 - loss: 4.6322, lr: 0.0000, epoch: 19
+2026-04-22 19:17:46 - roformer - INFO - Step 4020 - loss: 4.6569, lr: 0.0000, epoch: 19
+2026-04-22 19:18:46 - roformer - INFO - Epoch 19 - Train Loss: 4.6875
+2026-04-22 19:19:17 - roformer - INFO - Epoch 19 - Val Loss: 4.7703
+2026-04-22 19:19:17 - roformer - INFO - New best model! Loss: 4.7703
+2026-04-22 19:19:29 - roformer - INFO - Step 4030 - loss: 4.6985, lr: 0.0000, epoch: 20
+2026-04-22 19:19:46 - roformer - INFO - Step 4040 - loss: 4.7712, lr: 0.0000, epoch: 20
+2026-04-22 19:20:08 - roformer - INFO - Step 4050 - loss: 4.6159, lr: 0.0000, epoch: 20
+2026-04-22 19:20:35 - roformer - INFO - Step 4060 - loss: 4.6948, lr: 0.0000, epoch: 20
+2026-04-22 19:20:54 - roformer - INFO - Step 4070 - loss: 4.6368, lr: 0.0000, epoch: 20
+2026-04-22 19:21:12 - roformer - INFO - Step 4080 - loss: 4.6565, lr: 0.0000, epoch: 20
+2026-04-22 19:21:29 - roformer - INFO - Step 4090 - loss: 4.6369, lr: 0.0000, epoch: 20
+2026-04-22 19:21:50 - roformer - INFO - Step 4100 - loss: 4.7301, lr: 0.0000, epoch: 20
+2026-04-22 19:22:09 - roformer - INFO - Step 4110 - loss: 4.5824, lr: 0.0000, epoch: 20
+2026-04-22 19:22:26 - roformer - INFO - Step 4120 - loss: 4.6321, lr: 0.0000, epoch: 20
+2026-04-22 19:22:48 - roformer - INFO - Step 4130 - loss: 4.7250, lr: 0.0000, epoch: 20
+2026-04-22 19:23:08 - roformer - INFO - Step 4140 - loss: 4.8594, lr: 0.0000, epoch: 20
+2026-04-22 19:23:26 - roformer - INFO - Step 4150 - loss: 4.6676, lr: 0.0000, epoch: 20
+2026-04-22 19:23:45 - roformer - INFO - Step 4160 - loss: 4.7178, lr: 0.0000, epoch: 20
+2026-04-22 19:24:04 - roformer - INFO - Step 4170 - loss: 4.6673, lr: 0.0000, epoch: 20
+2026-04-22 19:24:37 - roformer - INFO - Step 4180 - loss: 4.6754, lr: 0.0000, epoch: 20
+2026-04-22 19:25:04 - roformer - INFO - Step 4190 - loss: 4.7629, lr: 0.0000, epoch: 20
+2026-04-22 19:25:26 - roformer - INFO - Step 4200 - loss: 4.4658, lr: 0.0000, epoch: 20
+2026-04-22 19:25:45 - roformer - INFO - Step 4210 - loss: 4.4952, lr: 0.0000, epoch: 20
+2026-04-22 19:26:05 - roformer - INFO - Step 4220 - loss: 4.6116, lr: 0.0000, epoch: 20
+2026-04-22 19:26:48 - roformer - INFO - Step 4230 - loss: 4.6838, lr: 0.0000, epoch: 20
+2026-04-22 19:27:06 - roformer - INFO - Step 4240 - loss: 4.4585, lr: 0.0000, epoch: 20
+2026-04-22 19:27:26 - roformer - INFO - Epoch 20 - Train Loss: 4.6666
+2026-04-22 19:28:02 - roformer - INFO - Epoch 20 - Val Loss: 4.7558
+2026-04-22 19:28:02 - roformer - INFO - New best model! Loss: 4.7558
+2026-04-22 19:28:30 - roformer - INFO - Step 4250 - loss: 4.6313, lr: 0.0000, epoch: 21
+2026-04-22 19:28:47 - roformer - INFO - Step 4260 - loss: 4.6613, lr: 0.0000, epoch: 21
+2026-04-22 19:29:08 - roformer - INFO - Step 4270 - loss: 4.6736, lr: 0.0000, epoch: 21
+2026-04-22 19:29:27 - roformer - INFO - Step 4280 - loss: 4.6329, lr: 0.0000, epoch: 21
+2026-04-22 19:29:54 - roformer - INFO - Step 4290 - loss: 4.6938, lr: 0.0000, epoch: 21
+2026-04-22 19:30:13 - roformer - INFO - Step 4300 - loss: 4.6415, lr: 0.0000, epoch: 21
+2026-04-22 19:30:44 - roformer - INFO - Step 4310 - loss: 4.5847, lr: 0.0000, epoch: 21
+2026-04-22 19:31:07 - roformer - INFO - Step 4320 - loss: 4.7452, lr: 0.0000, epoch: 21
+2026-04-22 19:31:27 - roformer - INFO - Step 4330 - loss: 4.7318, lr: 0.0000, epoch: 21
+2026-04-22 19:31:46 - roformer - INFO - Step 4340 - loss: 4.5960, lr: 0.0000, epoch: 21
+2026-04-22 19:32:13 - roformer - INFO - Step 4350 - loss: 4.7355, lr: 0.0000, epoch: 21
+2026-04-22 19:32:34 - roformer - INFO - Step 4360 - loss: 4.5312, lr: 0.0000, epoch: 21
+2026-04-22 19:32:53 - roformer - INFO - Step 4370 - loss: 4.5400, lr: 0.0000, epoch: 21
+2026-04-22 19:33:17 - roformer - INFO - Step 4380 - loss: 4.5743, lr: 0.0000, epoch: 21
+2026-04-22 19:33:57 - roformer - INFO - Step 4390 - loss: 4.5227, lr: 0.0000, epoch: 21
+2026-04-22 19:34:25 - roformer - INFO - Step 4400 - loss: 4.6225, lr: 0.0000, epoch: 21
+2026-04-22 19:34:51 - roformer - INFO - Step 4410 - loss: 4.6433, lr: 0.0000, epoch: 21
+2026-04-22 19:35:09 - roformer - INFO - Step 4420 - loss: 4.5630, lr: 0.0000, epoch: 21
+2026-04-22 19:36:01 - roformer - INFO - Step 4430 - loss: 4.6990, lr: 0.0000, epoch: 21
+2026-04-22 19:36:59 - roformer - INFO - Step 4440 - loss: 4.5411, lr: 0.0000, epoch: 21
+2026-04-22 19:37:29 - roformer - INFO - Step 4450 - loss: 4.5709, lr: 0.0000, epoch: 21
+2026-04-22 19:38:10 - roformer - INFO - Epoch 21 - Train Loss: 4.6479
+2026-04-22 19:38:40 - roformer - INFO - Epoch 21 - Val Loss: 4.7468
+2026-04-22 19:38:40 - roformer - INFO - New best model! Loss: 4.7468
+2026-04-22 19:39:03 - roformer - INFO - Step 4460 - loss: 4.6762, lr: 0.0000, epoch: 22
+2026-04-22 19:39:19 - roformer - INFO - Step 4470 - loss: 4.5707, lr: 0.0000, epoch: 22
+2026-04-22 19:39:40 - roformer - INFO - Step 4480 - loss: 4.7020, lr: 0.0000, epoch: 22
+2026-04-22 19:40:04 - roformer - INFO - Step 4490 - loss: 4.6877, lr: 0.0000, epoch: 22
+2026-04-22 19:40:24 - roformer - INFO - Step 4500 - loss: 4.5216, lr: 0.0000, epoch: 22
+2026-04-22 19:40:43 - roformer - INFO - Step 4510 - loss: 4.6051, lr: 0.0000, epoch: 22
+2026-04-22 19:41:02 - roformer - INFO - Step 4520 - loss: 4.6163, lr: 0.0000, epoch: 22
+2026-04-22 19:41:20 - roformer - INFO - Step 4530 - loss: 4.7103, lr: 0.0000, epoch: 22
+2026-04-22 19:41:38 - roformer - INFO - Step 4540 - loss: 4.6980, lr: 0.0000, epoch: 22
+2026-04-22 19:41:56 - roformer - INFO - Step 4550 - loss: 4.5641, lr: 0.0000, epoch: 22
+2026-04-22 19:42:40 - roformer - INFO - Step 4560 - loss: 4.6502, lr: 0.0000, epoch: 22
+2026-04-22 19:43:15 - roformer - INFO - Step 4570 - loss: 4.6425, lr: 0.0000, epoch: 22
+2026-04-22 19:43:37 - roformer - INFO - Step 4580 - loss: 4.7279, lr: 0.0000, epoch: 22
+2026-04-22 19:43:55 - roformer - INFO - Step 4590 - loss: 4.6881, lr: 0.0000, epoch: 22
+2026-04-22 19:44:14 - roformer - INFO - Step 4600 - loss: 4.6375, lr: 0.0000, epoch: 22
+2026-04-22 19:44:37 - roformer - INFO - Step 4610 - loss: 4.6277, lr: 0.0000, epoch: 22
+2026-04-22 19:44:56 - roformer - INFO - Step 4620 - loss: 4.5521, lr: 0.0000, epoch: 22
+2026-04-22 19:45:21 - roformer - INFO - Step 4630 - loss: 4.5932, lr: 0.0000, epoch: 22
+2026-04-22 19:46:08 - roformer - INFO - Step 4640 - loss: 4.7084, lr: 0.0000, epoch: 22
+2026-04-22 19:47:26 - roformer - INFO - Step 4650 - loss: 4.6374, lr: 0.0000, epoch: 22
+2026-04-22 19:48:17 - roformer - INFO - Step 4660 - loss: 4.5542, lr: 0.0000, epoch: 22
+2026-04-22 19:48:49 - roformer - INFO - Epoch 22 - Train Loss: 4.6301
+2026-04-22 19:49:27 - roformer - INFO - Epoch 22 - Val Loss: 4.7376
+2026-04-22 19:49:27 - roformer - INFO - New best model! Loss: 4.7376
+2026-04-22 19:49:50 - roformer - INFO - Step 4670 - loss: 4.7147, lr: 0.0000, epoch: 23
+2026-04-22 19:50:06 - roformer - INFO - Step 4680 - loss: 4.6955, lr: 0.0000, epoch: 23
+2026-04-22 19:51:34 - roformer - INFO - Step 4690 - loss: 4.6731, lr: 0.0000, epoch: 23
+2026-04-22 19:51:53 - roformer - INFO - Step 4700 - loss: 4.6002, lr: 0.0000, epoch: 23
+2026-04-22 19:52:48 - roformer - INFO - Step 4710 - loss: 4.5648, lr: 0.0000, epoch: 23
+2026-04-22 19:53:05 - roformer - INFO - Step 4720 - loss: 4.6474, lr: 0.0000, epoch: 23
+2026-04-22 19:53:28 - roformer - INFO - Step 4730 - loss: 4.5961, lr: 0.0000, epoch: 23
+2026-04-22 19:54:01 - roformer - INFO - Step 4740 - loss: 4.6918, lr: 0.0000, epoch: 23
+2026-04-22 19:54:45 - roformer - INFO - Step 4750 - loss: 4.4434, lr: 0.0000, epoch: 23
+2026-04-22 19:55:11 - roformer - INFO - Step 4760 - loss: 4.6439, lr: 0.0000, epoch: 23
+2026-04-22 19:55:35 - roformer - INFO - Step 4770 - loss: 4.5981, lr: 0.0000, epoch: 23
+2026-04-22 19:55:53 - roformer - INFO - Step 4780 - loss: 4.5897, lr: 0.0000, epoch: 23
+2026-04-22 19:56:25 - roformer - INFO - Step 4790 - loss: 4.6308, lr: 0.0000, epoch: 23
+2026-04-22 19:56:59 - roformer - INFO - Step 4800 - loss: 4.6040, lr: 0.0000, epoch: 23
+2026-04-22 19:57:48 - roformer - INFO - Step 4810 - loss: 4.6451, lr: 0.0000, epoch: 23
+2026-04-22 19:58:07 - roformer - INFO - Step 4820 - loss: 4.6886, lr: 0.0000, epoch: 23
+2026-04-22 19:58:32 - roformer - INFO - Step 4830 - loss: 4.6326, lr: 0.0000, epoch: 23
+2026-04-22 19:58:51 - roformer - INFO - Step 4840 - loss: 4.5736, lr: 0.0000, epoch: 23
+2026-04-22 19:59:30 - roformer - INFO - Step 4850 - loss: 4.6187, lr: 0.0000, epoch: 23
+2026-04-22 20:00:22 - roformer - INFO - Step 4860 - loss: 4.5755, lr: 0.0000, epoch: 23
+2026-04-22 20:00:45 - roformer - INFO - Step 4870 - loss: 4.7325, lr: 0.0000, epoch: 23
+2026-04-22 20:01:20 - roformer - INFO - Epoch 23 - Train Loss: 4.6140
+2026-04-22 20:01:56 - roformer - INFO - Epoch 23 - Val Loss: 4.7262
+2026-04-22 20:01:56 - roformer - INFO - New best model! Loss: 4.7262
+2026-04-22 20:02:13 - roformer - INFO - Step 4880 - loss: 4.5074, lr: 0.0000, epoch: 24
+2026-04-22 20:02:30 - roformer - INFO - Step 4890 - loss: 4.5251, lr: 0.0000, epoch: 24
+2026-04-22 20:03:08 - roformer - INFO - Step 4900 - loss: 4.4624, lr: 0.0000, epoch: 24
+2026-04-22 20:03:26 - roformer - INFO - Step 4910 - loss: 4.4990, lr: 0.0000, epoch: 24
+2026-04-22 20:09:16 - roformer - INFO - Step 4920 - loss: 4.6171, lr: 0.0000, epoch: 24
+2026-04-22 20:09:40 - roformer - INFO - Step 4930 - loss: 4.5741, lr: 0.0000, epoch: 24
+2026-04-22 20:10:48 - roformer - INFO - Step 4940 - loss: 4.7473, lr: 0.0000, epoch: 24
+2026-04-22 20:11:30 - roformer - INFO - Step 4950 - loss: 4.6916, lr: 0.0000, epoch: 24
+2026-04-22 20:12:09 - roformer - INFO - Step 4960 - loss: 4.4748, lr: 0.0000, epoch: 24
+2026-04-22 20:12:28 - roformer - INFO - Step 4970 - loss: 4.5376, lr: 0.0000, epoch: 24
+2026-04-22 20:12:48 - roformer - INFO - Step 4980 - loss: 4.4989, lr: 0.0000, epoch: 24
+2026-04-22 20:13:57 - roformer - INFO - Step 4990 - loss: 4.5404, lr: 0.0000, epoch: 24
+2026-04-22 20:15:04 - roformer - INFO - Step 5000 - loss: 4.5619, lr: 0.0000, epoch: 24
+2026-04-22 20:15:33 - roformer - INFO - Step 5010 - loss: 4.6500, lr: 0.0000, epoch: 24
+2026-04-22 20:16:20 - roformer - INFO - Step 5020 - loss: 4.5979, lr: 0.0000, epoch: 24
+2026-04-22 20:16:35 - roformer - INFO - Step 5030 - loss: 4.5105, lr: 0.0000, epoch: 24
+2026-04-22 20:16:59 - roformer - INFO - Step 5040 - loss: 4.6503, lr: 0.0000, epoch: 24
+2026-04-22 20:17:36 - roformer - INFO - Step 5050 - loss: 4.5644, lr: 0.0000, epoch: 24
+2026-04-22 20:18:07 - roformer - INFO - Step 5060 - loss: 4.5823, lr: 0.0000, epoch: 24
+2026-04-22 20:18:24 - roformer - INFO - Step 5070 - loss: 4.6247, lr: 0.0000, epoch: 24
+2026-04-22 20:18:41 - roformer - INFO - Step 5080 - loss: 4.4814, lr: 0.0000, epoch: 24
+2026-04-22 20:19:15 - roformer - INFO - Epoch 24 - Train Loss: 4.5990
+2026-04-22 20:19:48 - roformer - INFO - Epoch 24 - Val Loss: 4.7211
+2026-04-22 20:19:48 - roformer - INFO - New best model! Loss: 4.7211
+2026-04-22 20:20:02 - roformer - INFO - Step 5090 - loss: 4.5353, lr: 0.0000, epoch: 25
+2026-04-22 20:20:21 - roformer - INFO - Step 5100 - loss: 4.5708, lr: 0.0000, epoch: 25
+2026-04-22 20:20:33 - roformer - INFO - Step 5110 - loss: 4.5752, lr: 0.0000, epoch: 25
+2026-04-22 20:20:45 - roformer - INFO - Step 5120 - loss: 4.5735, lr: 0.0000, epoch: 25
+2026-04-22 20:20:56 - roformer - INFO - Step 5130 - loss: 4.5234, lr: 0.0000, epoch: 25
+2026-04-22 20:21:08 - roformer - INFO - Step 5140 - loss: 4.5983, lr: 0.0000, epoch: 25
+2026-04-22 20:21:21 - roformer - INFO - Step 5150 - loss: 4.5729, lr: 0.0000, epoch: 25
+2026-04-22 20:21:35 - roformer - INFO - Step 5160 - loss: 4.6009, lr: 0.0000, epoch: 25
+2026-04-22 20:21:49 - roformer - INFO - Step 5170 - loss: 4.5214, lr: 0.0000, epoch: 25
+2026-04-22 20:22:03 - roformer - INFO - Step 5180 - loss: 4.5922, lr: 0.0000, epoch: 25
+2026-04-22 20:22:17 - roformer - INFO - Step 5190 - loss: 4.5903, lr: 0.0000, epoch: 25
+2026-04-22 20:22:31 - roformer - INFO - Step 5200 - loss: 4.5723, lr: 0.0000, epoch: 25
+2026-04-22 20:22:46 - roformer - INFO - Step 5210 - loss: 4.6196, lr: 0.0000, epoch: 25
+2026-04-22 20:23:01 - roformer - INFO - Step 5220 - loss: 4.5452, lr: 0.0000, epoch: 25
+2026-04-22 20:23:16 - roformer - INFO - Step 5230 - loss: 4.6073, lr: 0.0000, epoch: 25
+2026-04-22 20:23:30 - roformer - INFO - Step 5240 - loss: 4.6674, lr: 0.0000, epoch: 25
+2026-04-22 20:23:47 - roformer - INFO - Step 5250 - loss: 4.5842, lr: 0.0000, epoch: 25
+2026-04-22 20:24:13 - roformer - INFO - Step 5260 - loss: 4.6031, lr: 0.0000, epoch: 25
+2026-04-22 20:24:31 - roformer - INFO - Step 5270 - loss: 4.6801, lr: 0.0000, epoch: 25
+2026-04-22 20:24:47 - roformer - INFO - Step 5280 - loss: 4.4900, lr: 0.0000, epoch: 25
+2026-04-22 20:25:03 - roformer - INFO - Step 5290 - loss: 4.7064, lr: 0.0000, epoch: 25
+2026-04-22 20:25:52 - roformer - INFO - Step 5300 - loss: 4.7242, lr: 0.0000, epoch: 25
+2026-04-22 20:26:12 - roformer - INFO - Epoch 25 - Train Loss: 4.5846
+2026-04-22 20:26:50 - roformer - INFO - Epoch 25 - Val Loss: 4.7135
+2026-04-22 20:26:50 - roformer - INFO - New best model! Loss: 4.7135
+2026-04-22 20:27:11 - roformer - INFO - Step 5310 - loss: 4.5387, lr: 0.0000, epoch: 26
+2026-04-22 20:27:20 - roformer - INFO - Step 5320 - loss: 4.4438, lr: 0.0000, epoch: 26
+2026-04-22 20:27:31 - roformer - INFO - Step 5330 - loss: 4.5988, lr: 0.0000, epoch: 26
+2026-04-22 20:27:56 - roformer - INFO - Step 5340 - loss: 4.6151, lr: 0.0000, epoch: 26
+2026-04-22 20:34:58 - roformer - INFO - Step 5350 - loss: 4.6972, lr: 0.0000, epoch: 26
+2026-04-22 20:35:45 - roformer - INFO - Step 5360 - loss: 4.6027, lr: 0.0000, epoch: 26
+2026-04-22 20:36:04 - roformer - INFO - Step 5370 - loss: 4.6225, lr: 0.0000, epoch: 26
+2026-04-22 20:36:23 - roformer - INFO - Step 5380 - loss: 4.5885, lr: 0.0000, epoch: 26
+2026-04-22 20:36:47 - roformer - INFO - Step 5390 - loss: 4.6152, lr: 0.0000, epoch: 26
+2026-04-22 20:37:04 - roformer - INFO - Step 5400 - loss: 4.5170, lr: 0.0000, epoch: 26
+2026-04-22 20:37:16 - roformer - INFO - Step 5410 - loss: 4.5622, lr: 0.0000, epoch: 26
+2026-04-22 20:37:35 - roformer - INFO - Step 5420 - loss: 4.5117, lr: 0.0000, epoch: 26
+2026-04-22 20:37:47 - roformer - INFO - Step 5430 - loss: 4.6286, lr: 0.0000, epoch: 26
+2026-04-22 20:37:59 - roformer - INFO - Step 5440 - loss: 4.5393, lr: 0.0000, epoch: 26
+2026-04-22 20:38:13 - roformer - INFO - Step 5450 - loss: 4.5954, lr: 0.0000, epoch: 26
+2026-04-22 20:39:10 - roformer - INFO - Step 5460 - loss: 4.3935, lr: 0.0000, epoch: 26
+2026-04-22 20:39:23 - roformer - INFO - Step 5470 - loss: 4.4531, lr: 0.0000, epoch: 26
+2026-04-22 20:40:54 - roformer - INFO - Step 5480 - loss: 4.5831, lr: 0.0000, epoch: 26
+2026-04-22 20:41:20 - roformer - INFO - Step 5490 - loss: 4.6568, lr: 0.0000, epoch: 26
+2026-04-22 20:42:02 - roformer - INFO - Step 5500 - loss: 4.7723, lr: 0.0000, epoch: 26
+2026-04-22 20:43:05 - roformer - INFO - Step 5510 - loss: 4.5395, lr: 0.0000, epoch: 26
+2026-04-22 20:43:29 - roformer - INFO - Epoch 26 - Train Loss: 4.5713
+2026-04-22 20:44:03 - roformer - INFO - Epoch 26 - Val Loss: 4.7100
+2026-04-22 20:44:03 - roformer - INFO - New best model! Loss: 4.7100
+2026-04-22 20:44:30 - roformer - INFO - Step 5520 - loss: 4.5304, lr: 0.0000, epoch: 27
+2026-04-22 20:44:48 - roformer - INFO - Step 5530 - loss: 4.7238, lr: 0.0000, epoch: 27
+2026-04-22 20:44:57 - roformer - INFO - Step 5540 - loss: 4.5327, lr: 0.0000, epoch: 27
+2026-04-22 20:45:07 - roformer - INFO - Step 5550 - loss: 4.3854, lr: 0.0000, epoch: 27
+2026-04-22 20:45:18 - roformer - INFO - Step 5560 - loss: 4.6222, lr: 0.0000, epoch: 27
+2026-04-22 20:45:35 - roformer - INFO - Step 5570 - loss: 4.6632, lr: 0.0000, epoch: 27
+2026-04-22 20:45:48 - roformer - INFO - Step 5580 - loss: 4.5732, lr: 0.0000, epoch: 27
+2026-04-22 20:46:11 - roformer - INFO - Step 5590 - loss: 4.5637, lr: 0.0000, epoch: 27
+2026-04-22 20:46:35 - roformer - INFO - Step 5600 - loss: 4.5970, lr: 0.0000, epoch: 27
+2026-04-22 20:46:55 - roformer - INFO - Step 5610 - loss: 4.6208, lr: 0.0000, epoch: 27
+2026-04-22 20:47:08 - roformer - INFO - Step 5620 - loss: 4.5337, lr: 0.0000, epoch: 27
+2026-04-22 20:47:29 - roformer - INFO - Step 5630 - loss: 4.6182, lr: 0.0000, epoch: 27
+2026-04-22 20:47:45 - roformer - INFO - Step 5640 - loss: 4.5606, lr: 0.0000, epoch: 27
+2026-04-22 20:48:03 - roformer - INFO - Step 5650 - loss: 4.5043, lr: 0.0000, epoch: 27
+2026-04-22 20:48:19 - roformer - INFO - Step 5660 - loss: 4.6158, lr: 0.0000, epoch: 27
+2026-04-22 20:48:37 - roformer - INFO - Step 5670 - loss: 4.4881, lr: 0.0000, epoch: 27
+2026-04-22 20:49:03 - roformer - INFO - Step 5680 - loss: 4.4567, lr: 0.0000, epoch: 27
+2026-04-22 20:49:19 - roformer - INFO - Step 5690 - loss: 4.5274, lr: 0.0000, epoch: 27
+2026-04-22 20:49:36 - roformer - INFO - Step 5700 - loss: 4.5458, lr: 0.0000, epoch: 27
+2026-04-22 20:49:51 - roformer - INFO - Step 5710 - loss: 4.6679, lr: 0.0000, epoch: 27
+2026-04-22 20:50:06 - roformer - INFO - Step 5720 - loss: 4.4769, lr: 0.0000, epoch: 27
+2026-04-22 20:50:32 - roformer - INFO - Epoch 27 - Train Loss: 4.5596
+2026-04-22 20:51:07 - roformer - INFO - Epoch 27 - Val Loss: 4.7026
+2026-04-22 20:51:07 - roformer - INFO - New best model! Loss: 4.7026
+2026-04-22 21:09:17 - roformer - INFO - Step 5730 - loss: 4.6588, lr: 0.0000, epoch: 28
+2026-04-22 21:09:41 - roformer - INFO - Step 5740 - loss: 4.5577, lr: 0.0000, epoch: 28
+2026-04-22 21:09:51 - roformer - INFO - Step 5750 - loss: 4.4698, lr: 0.0000, epoch: 28
+2026-04-22 21:26:38 - roformer - INFO - Step 5760 - loss: 4.5934, lr: 0.0000, epoch: 28
+2026-04-22 21:26:52 - roformer - INFO - Step 5770 - loss: 4.5885, lr: 0.0000, epoch: 28
+2026-04-22 21:28:19 - roformer - INFO - Step 5780 - loss: 4.5209, lr: 0.0000, epoch: 28
+2026-04-22 21:28:40 - roformer - INFO - Step 5790 - loss: 4.5580, lr: 0.0000, epoch: 28
+2026-04-22 21:28:58 - roformer - INFO - Step 5800 - loss: 4.4652, lr: 0.0000, epoch: 28
+2026-04-22 21:29:57 - roformer - INFO - Step 5810 - loss: 4.5685, lr: 0.0000, epoch: 28
+2026-04-22 21:30:54 - roformer - INFO - Step 5820 - loss: 4.5175, lr: 0.0000, epoch: 28
+2026-04-22 21:31:24 - roformer - INFO - Step 5830 - loss: 4.5543, lr: 0.0000, epoch: 28
+2026-04-22 21:31:37 - roformer - INFO - Step 5840 - loss: 4.5835, lr: 0.0000, epoch: 28
+2026-04-22 21:31:49 - roformer - INFO - Step 5850 - loss: 4.4469, lr: 0.0000, epoch: 28
+2026-04-22 21:32:05 - roformer - INFO - Step 5860 - loss: 4.5579, lr: 0.0000, epoch: 28
+2026-04-22 21:32:32 - roformer - INFO - Step 5870 - loss: 4.4401, lr: 0.0000, epoch: 28
+2026-04-22 21:32:43 - roformer - INFO - Step 5880 - loss: 4.6123, lr: 0.0000, epoch: 28
+2026-04-22 21:32:54 - roformer - INFO - Step 5890 - loss: 4.5368, lr: 0.0000, epoch: 28
+2026-04-22 21:44:35 - roformer - INFO - Step 5900 - loss: 4.5571, lr: 0.0000, epoch: 28
+2026-04-22 21:44:44 - roformer - INFO - Step 5910 - loss: 4.5942, lr: 0.0000, epoch: 28
+2026-04-22 21:50:13 - roformer - INFO - Step 5920 - loss: 4.5910, lr: 0.0000, epoch: 28
+2026-04-22 21:50:34 - roformer - INFO - Step 5930 - loss: 4.6306, lr: 0.0000, epoch: 28
+2026-04-22 22:49:43 - roformer - INFO - Epoch 28 - Train Loss: 4.5481
+2026-04-23 00:21:37 - roformer - INFO - Epoch 28 - Val Loss: 4.6973
+2026-04-23 00:21:37 - roformer - INFO - New best model! Loss: 4.6973
+2026-04-23 00:49:37 - roformer - INFO - Step 5940 - loss: 4.5500, lr: 0.0000, epoch: 29
+2026-04-23 01:06:16 - roformer - INFO - Step 5950 - loss: 4.5850, lr: 0.0000, epoch: 29
+2026-04-23 01:06:31 - roformer - INFO - Step 5960 - loss: 4.6553, lr: 0.0000, epoch: 29
+2026-04-23 01:06:44 - roformer - INFO - Step 5970 - loss: 4.5467, lr: 0.0000, epoch: 29
+2026-04-23 01:07:01 - roformer - INFO - Step 5980 - loss: 4.3583, lr: 0.0000, epoch: 29
+2026-04-23 01:22:44 - roformer - INFO - Step 5990 - loss: 4.6917, lr: 0.0000, epoch: 29
+2026-04-23 01:22:57 - roformer - INFO - Step 6000 - loss: 4.6302, lr: 0.0000, epoch: 29
+2026-04-23 01:32:51 - roformer - INFO - Step 6010 - loss: 4.5942, lr: 0.0000, epoch: 29
+2026-04-23 01:33:12 - roformer - INFO - Step 6020 - loss: 4.5746, lr: 0.0000, epoch: 29
+2026-04-23 01:33:26 - roformer - INFO - Step 6030 - loss: 4.5691, lr: 0.0000, epoch: 29
+2026-04-23 01:33:46 - roformer - INFO - Step 6040 - loss: 4.5508, lr: 0.0000, epoch: 29
+2026-04-23 01:34:05 - roformer - INFO - Step 6050 - loss: 4.4711, lr: 0.0000, epoch: 29
+2026-04-23 01:49:04 - roformer - INFO - Step 6060 - loss: 4.6020, lr: 0.0000, epoch: 29
+2026-04-23 01:49:16 - roformer - INFO - Step 6070 - loss: 4.5847, lr: 0.0000, epoch: 29
+2026-04-23 02:06:25 - roformer - INFO - Step 6080 - loss: 4.5397, lr: 0.0000, epoch: 29
+2026-04-23 02:06:42 - roformer - INFO - Step 6090 - loss: 4.5984, lr: 0.0000, epoch: 29
+2026-04-23 02:06:55 - roformer - INFO - Step 6100 - loss: 4.6428, lr: 0.0000, epoch: 29
+2026-04-23 02:07:20 - roformer - INFO - Step 6110 - loss: 4.5809, lr: 0.0000, epoch: 29
+2026-04-23 02:23:59 - roformer - INFO - Step 6120 - loss: 4.5307, lr: 0.0000, epoch: 29
+2026-04-23 02:24:08 - roformer - INFO - Step 6130 - loss: 4.6517, lr: 0.0000, epoch: 29
+2026-04-23 02:24:26 - roformer - INFO - Step 6140 - loss: 4.6674, lr: 0.0000, epoch: 29
+2026-04-23 02:35:12 - roformer - INFO - Epoch 29 - Train Loss: 4.5385
+2026-04-23 03:06:49 - roformer - INFO - Epoch 29 - Val Loss: 4.6925
+2026-04-23 03:06:49 - roformer - INFO - New best model! Loss: 4.6925
+2026-04-23 03:36:02 - roformer - INFO - Step 6150 - loss: 4.4639, lr: 0.0000, epoch: 30
+2026-04-23 03:52:17 - roformer - INFO - Step 6160 - loss: 4.5948, lr: 0.0000, epoch: 30
+2026-04-23 03:58:35 - roformer - INFO - Step 6170 - loss: 4.5726, lr: 0.0000, epoch: 30
+2026-04-23 03:58:57 - roformer - INFO - Step 6180 - loss: 4.5292, lr: 0.0000, epoch: 30
+2026-04-23 03:59:43 - roformer - INFO - Step 6190 - loss: 4.5817, lr: 0.0000, epoch: 30
+2026-04-23 04:00:07 - roformer - INFO - Step 6200 - loss: 4.5571, lr: 0.0000, epoch: 30
+2026-04-23 04:00:23 - roformer - INFO - Step 6210 - loss: 4.5844, lr: 0.0000, epoch: 30
+2026-04-23 04:00:36 - roformer - INFO - Step 6220 - loss: 4.5291, lr: 0.0000, epoch: 30
+2026-04-23 04:00:48 - roformer - INFO - Step 6230 - loss: 4.5989, lr: 0.0000, epoch: 30
+2026-04-23 04:02:05 - roformer - INFO - Step 6240 - loss: 4.6121, lr: 0.0000, epoch: 30
+2026-04-23 04:02:31 - roformer - INFO - Step 6250 - loss: 4.5467, lr: 0.0000, epoch: 30
+2026-04-23 04:02:42 - roformer - INFO - Step 6260 - loss: 4.6061, lr: 0.0000, epoch: 30
+2026-04-23 04:02:59 - roformer - INFO - Step 6270 - loss: 4.6097, lr: 0.0000, epoch: 30
+2026-04-23 04:03:26 - roformer - INFO - Step 6280 - loss: 4.5552, lr: 0.0000, epoch: 30
+2026-04-23 04:03:39 - roformer - INFO - Step 6290 - loss: 4.2997, lr: 0.0000, epoch: 30
+2026-04-23 04:03:52 - roformer - INFO - Step 6300 - loss: 4.5687, lr: 0.0000, epoch: 30
+2026-04-23 04:04:04 - roformer - INFO - Step 6310 - loss: 4.4839, lr: 0.0000, epoch: 30
+2026-04-23 04:04:15 - roformer - INFO - Step 6320 - loss: 4.5406, lr: 0.0000, epoch: 30
+2026-04-23 04:04:28 - roformer - INFO - Step 6330 - loss: 4.5407, lr: 0.0000, epoch: 30
+2026-04-23 04:04:38 - roformer - INFO - Step 6340 - loss: 4.5315, lr: 0.0000, epoch: 30
+2026-04-23 04:04:55 - roformer - INFO - Step 6350 - loss: 4.4806, lr: 0.0000, epoch: 30
+2026-04-23 04:05:06 - roformer - INFO - Step 6360 - loss: 4.6164, lr: 0.0000, epoch: 30
+2026-04-23 04:05:26 - roformer - INFO - Epoch 30 - Train Loss: 4.5287
+2026-04-23 04:17:06 - roformer - INFO - Epoch 30 - Val Loss: 4.6893
+2026-04-23 04:17:06 - roformer - INFO - New best model! Loss: 4.6893
+2026-04-23 04:17:31 - roformer - INFO - Step 6370 - loss: 4.4639, lr: 0.0000, epoch: 31
+2026-04-23 04:17:46 - roformer - INFO - Step 6380 - loss: 4.6130, lr: 0.0000, epoch: 31
+2026-04-23 04:17:56 - roformer - INFO - Step 6390 - loss: 4.4400, lr: 0.0000, epoch: 31
+2026-04-23 04:18:12 - roformer - INFO - Step 6400 - loss: 4.4924, lr: 0.0000, epoch: 31
+2026-04-23 04:18:35 - roformer - INFO - Step 6410 - loss: 4.6138, lr: 0.0000, epoch: 31
+2026-04-23 04:18:52 - roformer - INFO - Step 6420 - loss: 4.3156, lr: 0.0000, epoch: 31
+2026-04-23 04:19:11 - roformer - INFO - Step 6430 - loss: 4.4617, lr: 0.0000, epoch: 31
+2026-04-23 04:19:21 - roformer - INFO - Step 6440 - loss: 4.5442, lr: 0.0000, epoch: 31
+2026-04-23 04:19:31 - roformer - INFO - Step 6450 - loss: 4.6360, lr: 0.0000, epoch: 31
+2026-04-23 04:19:44 - roformer - INFO - Step 6460 - loss: 4.4768, lr: 0.0000, epoch: 31
+2026-04-23 04:19:54 - roformer - INFO - Step 6470 - loss: 4.5686, lr: 0.0000, epoch: 31
+2026-04-23 04:20:04 - roformer - INFO - Step 6480 - loss: 4.4851, lr: 0.0000, epoch: 31
+2026-04-23 04:20:27 - roformer - INFO - Step 6490 - loss: 4.5267, lr: 0.0000, epoch: 31
+2026-04-23 04:21:10 - roformer - INFO - Step 6500 - loss: 4.5018, lr: 0.0000, epoch: 31
+2026-04-23 04:21:29 - roformer - INFO - Step 6510 - loss: 4.5564, lr: 0.0000, epoch: 31
+2026-04-23 04:21:43 - roformer - INFO - Step 6520 - loss: 4.4846, lr: 0.0000, epoch: 31
+2026-04-23 04:21:58 - roformer - INFO - Step 6530 - loss: 4.4567, lr: 0.0000, epoch: 31
+2026-04-23 04:22:12 - roformer - INFO - Step 6540 - loss: 4.5754, lr: 0.0000, epoch: 31
+2026-04-23 04:22:29 - roformer - INFO - Step 6550 - loss: 4.6263, lr: 0.0000, epoch: 31
+2026-04-23 04:22:51 - roformer - INFO - Step 6560 - loss: 4.5834, lr: 0.0000, epoch: 31
+2026-04-23 04:23:29 - roformer - INFO - Step 6570 - loss: 4.5241, lr: 0.0000, epoch: 31
+2026-04-23 04:23:53 - roformer - INFO - Epoch 31 - Train Loss: 4.5207
+2026-04-23 04:24:27 - roformer - INFO - Epoch 31 - Val Loss: 4.6856
+2026-04-23 04:24:27 - roformer - INFO - New best model! Loss: 4.6856
+2026-04-23 04:24:47 - roformer - INFO - Step 6580 - loss: 4.5421, lr: 0.0000, epoch: 32
+2026-04-23 04:25:00 - roformer - INFO - Step 6590 - loss: 4.5173, lr: 0.0000, epoch: 32
+2026-04-23 04:25:14 - roformer - INFO - Step 6600 - loss: 4.3856, lr: 0.0000, epoch: 32
+2026-04-23 04:25:28 - roformer - INFO - Step 6610 - loss: 4.4872, lr: 0.0000, epoch: 32
+2026-04-23 04:25:46 - roformer - INFO - Step 6620 - loss: 4.5671, lr: 0.0000, epoch: 32
+2026-04-23 04:25:57 - roformer - INFO - Step 6630 - loss: 4.5122, lr: 0.0000, epoch: 32
+2026-04-23 04:26:10 - roformer - INFO - Step 6640 - loss: 4.2484, lr: 0.0000, epoch: 32
+2026-04-23 04:26:29 - roformer - INFO - Step 6650 - loss: 4.5424, lr: 0.0000, epoch: 32
+2026-04-23 04:26:44 - roformer - INFO - Step 6660 - loss: 4.4110, lr: 0.0000, epoch: 32
+2026-04-23 04:27:00 - roformer - INFO - Step 6670 - loss: 4.4607, lr: 0.0000, epoch: 32
+2026-04-23 04:27:15 - roformer - INFO - Step 6680 - loss: 4.4993, lr: 0.0000, epoch: 32
+2026-04-23 04:27:31 - roformer - INFO - Step 6690 - loss: 4.5556, lr: 0.0000, epoch: 32
+2026-04-23 04:29:37 - roformer - INFO - Step 6700 - loss: 4.6289, lr: 0.0000, epoch: 32
+2026-04-23 04:29:56 - roformer - INFO - Step 6710 - loss: 4.4013, lr: 0.0000, epoch: 32
+2026-04-23 04:30:13 - roformer - INFO - Step 6720 - loss: 4.5266, lr: 0.0000, epoch: 32
+2026-04-23 04:31:39 - roformer - INFO - Step 6730 - loss: 4.5077, lr: 0.0000, epoch: 32
+2026-04-23 04:32:09 - roformer - INFO - Step 6740 - loss: 4.5337, lr: 0.0000, epoch: 32
+2026-04-23 04:33:22 - roformer - INFO - Step 6750 - loss: 4.5547, lr: 0.0000, epoch: 32
+2026-04-23 04:33:46 - roformer - INFO - Step 6760 - loss: 4.4711, lr: 0.0000, epoch: 32
+2026-04-23 04:34:27 - roformer - INFO - Step 6770 - loss: 4.5148, lr: 0.0000, epoch: 32
+2026-04-23 04:35:16 - roformer - INFO - Step 6780 - loss: 4.5221, lr: 0.0000, epoch: 32
+2026-04-23 04:35:47 - roformer - INFO - Epoch 32 - Train Loss: 4.5136
+2026-04-23 04:36:20 - roformer - INFO - Epoch 32 - Val Loss: 4.6834
+2026-04-23 04:36:20 - roformer - INFO - New best model! Loss: 4.6834
+2026-04-23 04:36:44 - roformer - INFO - Step 6790 - loss: 4.4907, lr: 0.0000, epoch: 33
+2026-04-23 04:37:10 - roformer - INFO - Step 6800 - loss: 4.5917, lr: 0.0000, epoch: 33
+2026-04-23 04:37:47 - roformer - INFO - Step 6810 - loss: 4.4037, lr: 0.0000, epoch: 33
+2026-04-23 04:37:58 - roformer - INFO - Step 6820 - loss: 4.6004, lr: 0.0000, epoch: 33
+2026-04-23 04:38:16 - roformer - INFO - Step 6830 - loss: 4.3932, lr: 0.0000, epoch: 33
+2026-04-23 04:38:38 - roformer - INFO - Step 6840 - loss: 4.4910, lr: 0.0000, epoch: 33
+2026-04-23 04:39:07 - roformer - INFO - Step 6850 - loss: 4.4580, lr: 0.0000, epoch: 33
+2026-04-23 04:39:23 - roformer - INFO - Step 6860 - loss: 4.4943, lr: 0.0000, epoch: 33
+2026-04-23 04:39:45 - roformer - INFO - Step 6870 - loss: 4.4416, lr: 0.0000, epoch: 33
+2026-04-23 04:40:04 - roformer - INFO - Step 6880 - loss: 4.5156, lr: 0.0000, epoch: 33
+2026-04-23 04:40:18 - roformer - INFO - Step 6890 - loss: 4.4429, lr: 0.0000, epoch: 33
+2026-04-23 04:40:38 - roformer - INFO - Step 6900 - loss: 4.4358, lr: 0.0000, epoch: 33
+2026-04-23 04:40:56 - roformer - INFO - Step 6910 - loss: 4.4724, lr: 0.0000, epoch: 33
+2026-04-23 04:41:24 - roformer - INFO - Step 6920 - loss: 4.5049, lr: 0.0000, epoch: 33
+2026-04-23 04:41:43 - roformer - INFO - Step 6930 - loss: 4.4829, lr: 0.0000, epoch: 33
+2026-04-23 04:42:04 - roformer - INFO - Step 6940 - loss: 4.4594, lr: 0.0000, epoch: 33
+2026-04-23 04:42:19 - roformer - INFO - Step 6950 - loss: 4.5375, lr: 0.0000, epoch: 33
+2026-04-23 04:42:33 - roformer - INFO - Step 6960 - loss: 4.6134, lr: 0.0000, epoch: 33
+2026-04-23 04:42:47 - roformer - INFO - Step 6970 - loss: 4.4983, lr: 0.0000, epoch: 33
+2026-04-23 04:43:04 - roformer - INFO - Step 6980 - loss: 4.4799, lr: 0.0000, epoch: 33
+2026-04-23 04:43:25 - roformer - INFO - Step 6990 - loss: 4.5345, lr: 0.0000, epoch: 33
+2026-04-23 04:43:58 - roformer - INFO - Epoch 33 - Train Loss: 4.5061
+2026-04-23 04:46:32 - roformer - INFO - Epoch 33 - Val Loss: 4.6808
+2026-04-23 04:46:32 - roformer - INFO - New best model! Loss: 4.6808
+2026-04-23 04:46:51 - roformer - INFO - Step 7000 - loss: 4.4556, lr: 0.0000, epoch: 34
+2026-04-23 04:47:25 - roformer - INFO - Step 7010 - loss: 4.4775, lr: 0.0000, epoch: 34
+2026-04-23 04:47:36 - roformer - INFO - Step 7020 - loss: 4.5669, lr: 0.0000, epoch: 34
+2026-04-23 04:47:49 - roformer - INFO - Step 7030 - loss: 4.5473, lr: 0.0000, epoch: 34
+2026-04-23 04:48:34 - roformer - INFO - Step 7040 - loss: 4.5211, lr: 0.0000, epoch: 34
+2026-04-23 04:49:19 - roformer - INFO - Step 7050 - loss: 4.6105, lr: 0.0000, epoch: 34
+2026-04-23 04:49:37 - roformer - INFO - Step 7060 - loss: 4.4996, lr: 0.0000, epoch: 34
+2026-04-23 04:49:51 - roformer - INFO - Step 7070 - loss: 4.5888, lr: 0.0000, epoch: 34
+2026-04-23 04:50:05 - roformer - INFO - Step 7080 - loss: 4.5478, lr: 0.0000, epoch: 34
+2026-04-23 04:50:22 - roformer - INFO - Step 7090 - loss: 4.5286, lr: 0.0000, epoch: 34
+2026-04-23 04:50:36 - roformer - INFO - Step 7100 - loss: 4.4578, lr: 0.0000, epoch: 34
+2026-04-23 04:50:52 - roformer - INFO - Step 7110 - loss: 4.5152, lr: 0.0000, epoch: 34
+2026-04-23 04:51:26 - roformer - INFO - Step 7120 - loss: 4.4563, lr: 0.0000, epoch: 34
+2026-04-23 04:51:45 - roformer - INFO - Step 7130 - loss: 4.4649, lr: 0.0000, epoch: 34
+2026-04-23 04:52:01 - roformer - INFO - Step 7140 - loss: 4.5398, lr: 0.0000, epoch: 34
+2026-04-23 04:52:22 - roformer - INFO - Step 7150 - loss: 4.5519, lr: 0.0000, epoch: 34
+2026-04-23 04:53:08 - roformer - INFO - Step 7160 - loss: 4.4608, lr: 0.0000, epoch: 34
+2026-04-23 04:53:43 - roformer - INFO - Step 7170 - loss: 4.5006, lr: 0.0000, epoch: 34
+2026-04-23 04:54:03 - roformer - INFO - Step 7180 - loss: 4.4974, lr: 0.0000, epoch: 34
+2026-04-23 05:02:59 - roformer - INFO - Step 7190 - loss: 4.4801, lr: 0.0000, epoch: 34
+2026-04-23 05:03:34 - roformer - INFO - Step 7200 - loss: 4.6112, lr: 0.0000, epoch: 34
+2026-04-23 05:04:37 - roformer - INFO - Epoch 34 - Train Loss: 4.5000
+2026-04-23 05:20:33 - roformer - INFO - Epoch 34 - Val Loss: 4.6797
+2026-04-23 05:20:34 - roformer - INFO - New best model! Loss: 4.6797
+2026-04-23 05:20:52 - roformer - INFO - Step 7210 - loss: 4.5465, lr: 0.0000, epoch: 35
+2026-04-23 05:21:16 - roformer - INFO - Step 7220 - loss: 4.3554, lr: 0.0000, epoch: 35
+2026-04-23 05:27:50 - roformer - INFO - Step 7230 - loss: 4.5013, lr: 0.0000, epoch: 35
+2026-04-23 05:28:52 - roformer - INFO - Step 7240 - loss: 4.5573, lr: 0.0000, epoch: 35
+2026-04-23 05:30:26 - roformer - INFO - Step 7250 - loss: 4.5506, lr: 0.0000, epoch: 35
+2026-04-23 05:30:46 - roformer - INFO - Step 7260 - loss: 4.4669, lr: 0.0000, epoch: 35
+2026-04-23 05:31:22 - roformer - INFO - Step 7270 - loss: 4.4647, lr: 0.0000, epoch: 35
+2026-04-23 05:31:40 - roformer - INFO - Step 7280 - loss: 4.4728, lr: 0.0000, epoch: 35
+2026-04-23 05:32:47 - roformer - INFO - Step 7290 - loss: 4.4360, lr: 0.0000, epoch: 35
+2026-04-23 05:33:15 - roformer - INFO - Step 7300 - loss: 4.3636, lr: 0.0000, epoch: 35
+2026-04-23 05:33:44 - roformer - INFO - Step 7310 - loss: 4.4458, lr: 0.0000, epoch: 35
+2026-04-23 05:34:03 - roformer - INFO - Step 7320 - loss: 4.4681, lr: 0.0000, epoch: 35
+2026-04-23 05:35:00 - roformer - INFO - Step 7330 - loss: 4.4052, lr: 0.0000, epoch: 35
+2026-04-23 05:35:18 - roformer - INFO - Step 7340 - loss: 4.4707, lr: 0.0000, epoch: 35
+2026-04-23 05:35:38 - roformer - INFO - Step 7350 - loss: 4.5712, lr: 0.0000, epoch: 35
+2026-04-23 05:36:00 - roformer - INFO - Step 7360 - loss: 4.4523, lr: 0.0000, epoch: 35
+2026-04-23 05:37:47 - roformer - INFO - Step 7370 - loss: 4.4404, lr: 0.0000, epoch: 35
+2026-04-23 05:38:59 - roformer - INFO - Step 7380 - loss: 4.5311, lr: 0.0000, epoch: 35
+2026-04-23 05:41:17 - roformer - INFO - Step 7390 - loss: 4.5340, lr: 0.0000, epoch: 35
+2026-04-23 05:41:32 - roformer - INFO - Step 7400 - loss: 4.3680, lr: 0.0000, epoch: 35
+2026-04-23 05:42:11 - roformer - INFO - Step 7410 - loss: 4.2592, lr: 0.0000, epoch: 35
+2026-04-23 05:42:43 - roformer - INFO - Step 7420 - loss: 4.5853, lr: 0.0000, epoch: 35
+2026-04-23 05:43:03 - roformer - INFO - Epoch 35 - Train Loss: 4.4958
+2026-04-23 05:43:48 - roformer - INFO - Epoch 35 - Val Loss: 4.6767
+2026-04-23 05:43:48 - roformer - INFO - New best model! Loss: 4.6767
+2026-04-23 05:44:17 - roformer - INFO - Step 7430 - loss: 4.4812, lr: 0.0000, epoch: 36
+2026-04-23 05:44:32 - roformer - INFO - Step 7440 - loss: 4.4983, lr: 0.0000, epoch: 36
+2026-04-23 05:44:43 - roformer - INFO - Step 7450 - loss: 4.4913, lr: 0.0000, epoch: 36
+2026-04-23 05:45:01 - roformer - INFO - Step 7460 - loss: 4.4825, lr: 0.0000, epoch: 36
+2026-04-23 05:45:25 - roformer - INFO - Step 7470 - loss: 4.4531, lr: 0.0000, epoch: 36
+2026-04-23 05:45:44 - roformer - INFO - Step 7480 - loss: 4.5934, lr: 0.0000, epoch: 36
+2026-04-23 05:46:04 - roformer - INFO - Step 7490 - loss: 4.5095, lr: 0.0000, epoch: 36
+2026-04-23 05:46:22 - roformer - INFO - Step 7500 - loss: 4.5837, lr: 0.0000, epoch: 36
+2026-04-23 05:46:42 - roformer - INFO - Step 7510 - loss: 4.3824, lr: 0.0000, epoch: 36
+2026-04-23 05:46:58 - roformer - INFO - Step 7520 - loss: 4.4679, lr: 0.0000, epoch: 36
+2026-04-23 05:47:21 - roformer - INFO - Step 7530 - loss: 4.3730, lr: 0.0000, epoch: 36
+2026-04-23 05:47:43 - roformer - INFO - Step 7540 - loss: 4.5146, lr: 0.0000, epoch: 36
+2026-04-23 05:48:07 - roformer - INFO - Step 7550 - loss: 4.5445, lr: 0.0000, epoch: 36
+2026-04-23 05:48:31 - roformer - INFO - Step 7560 - loss: 4.5195, lr: 0.0000, epoch: 36
+2026-04-23 05:48:52 - roformer - INFO - Step 7570 - loss: 4.4584, lr: 0.0000, epoch: 36
+2026-04-23 05:49:14 - roformer - INFO - Step 7580 - loss: 4.5785, lr: 0.0000, epoch: 36
+2026-04-23 05:50:12 - roformer - INFO - Step 7590 - loss: 4.3136, lr: 0.0000, epoch: 36
+2026-04-23 05:50:30 - roformer - INFO - Step 7600 - loss: 4.5766, lr: 0.0000, epoch: 36
+2026-04-23 05:50:52 - roformer - INFO - Step 7610 - loss: 4.5524, lr: 0.0000, epoch: 36
+2026-04-23 05:51:12 - roformer - INFO - Step 7620 - loss: 4.5331, lr: 0.0000, epoch: 36
+2026-04-23 05:51:36 - roformer - INFO - Step 7630 - loss: 4.5085, lr: 0.0000, epoch: 36
+2026-04-23 05:52:06 - roformer - INFO - Epoch 36 - Train Loss: 4.4897
+2026-04-23 05:52:41 - roformer - INFO - Epoch 36 - Val Loss: 4.6763
+2026-04-23 05:52:41 - roformer - INFO - New best model! Loss: 4.6763
+2026-04-23 05:53:09 - roformer - INFO - Step 7640 - loss: 4.3625, lr: 0.0000, epoch: 37
+2026-04-23 05:53:25 - roformer - INFO - Step 7650 - loss: 4.4844, lr: 0.0000, epoch: 37
+2026-04-23 05:53:43 - roformer - INFO - Step 7660 - loss: 4.4341, lr: 0.0000, epoch: 37
+2026-04-23 05:54:30 - roformer - INFO - Step 7670 - loss: 4.5540, lr: 0.0000, epoch: 37
+2026-04-23 05:54:51 - roformer - INFO - Step 7680 - loss: 4.4206, lr: 0.0000, epoch: 37
+2026-04-23 05:55:11 - roformer - INFO - Step 7690 - loss: 4.4310, lr: 0.0000, epoch: 37
+2026-04-23 05:55:49 - roformer - INFO - Step 7700 - loss: 4.5118, lr: 0.0000, epoch: 37
+2026-04-23 05:56:08 - roformer - INFO - Step 7710 - loss: 4.5015, lr: 0.0000, epoch: 37
+2026-04-23 05:56:37 - roformer - INFO - Step 7720 - loss: 4.4345, lr: 0.0000, epoch: 37
+2026-04-23 05:57:00 - roformer - INFO - Step 7730 - loss: 4.5136, lr: 0.0000, epoch: 37
+2026-04-23 05:57:18 - roformer - INFO - Step 7740 - loss: 4.5079, lr: 0.0000, epoch: 37
+2026-04-23 05:57:41 - roformer - INFO - Step 7750 - loss: 4.4596, lr: 0.0000, epoch: 37
+2026-04-23 05:58:04 - roformer - INFO - Step 7760 - loss: 4.4775, lr: 0.0000, epoch: 37
+2026-04-23 05:58:29 - roformer - INFO - Step 7770 - loss: 4.5004, lr: 0.0000, epoch: 37
+2026-04-23 05:58:50 - roformer - INFO - Step 7780 - loss: 4.4975, lr: 0.0000, epoch: 37
+2026-04-23 05:59:09 - roformer - INFO - Step 7790 - loss: 4.5664, lr: 0.0000, epoch: 37
+2026-04-23 05:59:29 - roformer - INFO - Step 7800 - loss: 4.5010, lr: 0.0000, epoch: 37
+2026-04-23 05:59:49 - roformer - INFO - Step 7810 - loss: 4.5330, lr: 0.0000, epoch: 37
+2026-04-23 06:00:12 - roformer - INFO - Step 7820 - loss: 4.5250, lr: 0.0000, epoch: 37
+2026-04-23 06:00:35 - roformer - INFO - Step 7830 - loss: 4.5598, lr: 0.0000, epoch: 37
+2026-04-23 06:00:55 - roformer - INFO - Step 7840 - loss: 4.5332, lr: 0.0000, epoch: 37
+2026-04-23 06:01:22 - roformer - INFO - Epoch 37 - Train Loss: 4.4869
+2026-04-23 06:11:01 - roformer - INFO - Epoch 37 - Val Loss: 4.6745
+2026-04-23 06:11:01 - roformer - INFO - New best model! Loss: 4.6745
+2026-04-23 06:11:26 - roformer - INFO - Step 7850 - loss: 4.2399, lr: 0.0000, epoch: 38
+2026-04-23 06:11:50 - roformer - INFO - Step 7860 - loss: 4.5204, lr: 0.0000, epoch: 38
+2026-04-23 06:12:04 - roformer - INFO - Step 7870 - loss: 4.5354, lr: 0.0000, epoch: 38
+2026-04-23 06:12:26 - roformer - INFO - Step 7880 - loss: 4.5031, lr: 0.0000, epoch: 38
+2026-04-23 06:56:51 - roformer - INFO - Step 7890 - loss: 4.5454, lr: 0.0000, epoch: 38
+2026-04-23 06:57:29 - roformer - INFO - Step 7900 - loss: 4.4163, lr: 0.0000, epoch: 38
+2026-04-23 07:05:23 - roformer - INFO - Step 7910 - loss: 4.5078, lr: 0.0000, epoch: 38
+2026-04-23 07:09:53 - roformer - INFO - Step 7920 - loss: 4.4881, lr: 0.0000, epoch: 38
+2026-04-23 07:11:45 - roformer - INFO - Step 7930 - loss: 4.6043, lr: 0.0000, epoch: 38
+2026-04-23 07:12:04 - roformer - INFO - Step 7940 - loss: 4.3903, lr: 0.0000, epoch: 38
+2026-04-23 07:12:53 - roformer - INFO - Step 7950 - loss: 4.4748, lr: 0.0000, epoch: 38
+2026-04-23 07:13:47 - roformer - INFO - Step 7960 - loss: 4.2773, lr: 0.0000, epoch: 38
+2026-04-23 07:14:39 - roformer - INFO - Step 7970 - loss: 4.5280, lr: 0.0000, epoch: 38
+2026-04-23 07:15:02 - roformer - INFO - Step 7980 - loss: 4.4303, lr: 0.0000, epoch: 38
+2026-04-23 07:15:48 - roformer - INFO - Step 7990 - loss: 4.4931, lr: 0.0000, epoch: 38
+2026-04-23 07:17:16 - roformer - INFO - Step 8000 - loss: 4.4777, lr: 0.0000, epoch: 38
+2026-04-23 07:17:38 - roformer - INFO - Step 8010 - loss: 4.5255, lr: 0.0000, epoch: 38
+2026-04-23 07:17:49 - roformer - INFO - Step 8020 - loss: 4.4260, lr: 0.0000, epoch: 38
+2026-04-23 07:17:58 - roformer - INFO - Step 8030 - loss: 4.4997, lr: 0.0000, epoch: 38
+2026-04-23 07:18:28 - roformer - INFO - Step 8040 - loss: 4.4163, lr: 0.0000, epoch: 38
+2026-04-23 07:18:47 - roformer - INFO - Step 8050 - loss: 4.5126, lr: 0.0000, epoch: 38
+2026-04-23 07:19:57 - roformer - INFO - Epoch 38 - Train Loss: 4.4826
+2026-04-23 07:20:33 - roformer - INFO - Epoch 38 - Val Loss: 4.6738
+2026-04-23 07:20:33 - roformer - INFO - New best model! Loss: 4.6738
+2026-04-23 07:20:54 - roformer - INFO - Step 8060 - loss: 4.5011, lr: 0.0000, epoch: 39
+2026-04-23 08:27:57 - roformer - INFO - Step 8070 - loss: 4.4716, lr: 0.0000, epoch: 39
+2026-04-23 08:28:14 - roformer - INFO - Step 8080 - loss: 4.4993, lr: 0.0000, epoch: 39
+2026-04-23 08:28:49 - roformer - INFO - Step 8090 - loss: 4.4108, lr: 0.0000, epoch: 39
+2026-04-23 08:29:24 - roformer - INFO - Step 8100 - loss: 4.3876, lr: 0.0000, epoch: 39
+2026-04-23 08:30:16 - roformer - INFO - Step 8110 - loss: 4.5542, lr: 0.0000, epoch: 39
+2026-04-23 08:30:38 - roformer - INFO - Step 8120 - loss: 4.5075, lr: 0.0000, epoch: 39
+2026-04-23 08:30:51 - roformer - INFO - Step 8130 - loss: 4.3957, lr: 0.0000, epoch: 39
+2026-04-23 08:31:28 - roformer - INFO - Step 8140 - loss: 4.4793, lr: 0.0000, epoch: 39
+2026-04-23 08:31:48 - roformer - INFO - Step 8150 - loss: 4.4930, lr: 0.0000, epoch: 39
+2026-04-23 08:32:01 - roformer - INFO - Step 8160 - loss: 4.5744, lr: 0.0000, epoch: 39
+2026-04-23 08:32:17 - roformer - INFO - Step 8170 - loss: 4.4730, lr: 0.0000, epoch: 39
+2026-04-23 08:32:34 - roformer - INFO - Step 8180 - loss: 4.4382, lr: 0.0000, epoch: 39
+2026-04-23 08:32:50 - roformer - INFO - Step 8190 - loss: 4.3469, lr: 0.0000, epoch: 39
+2026-04-23 08:33:17 - roformer - INFO - Step 8200 - loss: 4.5462, lr: 0.0000, epoch: 39
+2026-04-23 08:33:29 - roformer - INFO - Step 8210 - loss: 4.4013, lr: 0.0000, epoch: 39
+2026-04-23 08:33:58 - roformer - INFO - Step 8220 - loss: 4.5115, lr: 0.0000, epoch: 39
+2026-04-23 08:34:13 - roformer - INFO - Step 8230 - loss: 4.4478, lr: 0.0000, epoch: 39
+2026-04-23 08:34:24 - roformer - INFO - Step 8240 - loss: 4.5563, lr: 0.0000, epoch: 39
+2026-04-23 08:37:52 - roformer - INFO - Step 8250 - loss: 4.4101, lr: 0.0000, epoch: 39
+2026-04-23 08:40:39 - roformer - INFO - Step 8260 - loss: 4.3913, lr: 0.0000, epoch: 39
+2026-04-23 08:42:12 - roformer - INFO - Epoch 39 - Train Loss: 4.4793
+2026-04-23 08:42:46 - roformer - INFO - Epoch 39 - Val Loss: 4.6725
+2026-04-23 08:42:46 - roformer - INFO - New best model! Loss: 4.6725
+2026-04-23 08:42:58 - roformer - INFO - Step 8270 - loss: 4.4698, lr: 0.0000, epoch: 40
+2026-04-23 08:43:18 - roformer - INFO - Step 8280 - loss: 4.4891, lr: 0.0000, epoch: 40
+2026-04-23 08:43:35 - roformer - INFO - Step 8290 - loss: 4.4084, lr: 0.0000, epoch: 40
+2026-04-23 08:43:50 - roformer - INFO - Step 8300 - loss: 4.5215, lr: 0.0000, epoch: 40
+2026-04-23 08:44:04 - roformer - INFO - Step 8310 - loss: 4.4777, lr: 0.0000, epoch: 40
+2026-04-23 08:46:15 - roformer - INFO - Step 8320 - loss: 4.5502, lr: 0.0000, epoch: 40
+2026-04-23 08:47:16 - roformer - INFO - Step 8330 - loss: 4.5830, lr: 0.0000, epoch: 40
+2026-04-23 08:47:45 - roformer - INFO - Step 8340 - loss: 4.5275, lr: 0.0000, epoch: 40
+2026-04-23 08:48:06 - roformer - INFO - Step 8350 - loss: 4.4348, lr: 0.0000, epoch: 40
+2026-04-23 08:49:01 - roformer - INFO - Step 8360 - loss: 4.4778, lr: 0.0000, epoch: 40
+2026-04-23 08:50:28 - roformer - INFO - Step 8370 - loss: 4.3786, lr: 0.0000, epoch: 40
+2026-04-23 08:51:01 - roformer - INFO - Step 8380 - loss: 4.4982, lr: 0.0000, epoch: 40
+2026-04-23 08:52:13 - roformer - INFO - Step 8390 - loss: 4.5320, lr: 0.0000, epoch: 40
+2026-04-23 08:52:41 - roformer - INFO - Step 8400 - loss: 4.3742, lr: 0.0000, epoch: 40
+2026-04-23 08:52:56 - roformer - INFO - Step 8410 - loss: 4.6302, lr: 0.0000, epoch: 40
+2026-04-23 08:53:07 - roformer - INFO - Step 8420 - loss: 4.4269, lr: 0.0000, epoch: 40
+2026-04-23 08:53:21 - roformer - INFO - Step 8430 - loss: 4.4631, lr: 0.0000, epoch: 40
+2026-04-23 08:54:58 - roformer - INFO - Step 8440 - loss: 4.5209, lr: 0.0000, epoch: 40
+2026-04-23 08:56:59 - roformer - INFO - Step 8450 - loss: 4.4685, lr: 0.0000, epoch: 40
+2026-04-23 08:57:55 - roformer - INFO - Step 8460 - loss: 4.4522, lr: 0.0000, epoch: 40
+2026-04-23 08:58:31 - roformer - INFO - Step 8470 - loss: 4.5323, lr: 0.0000, epoch: 40
+2026-04-23 08:59:00 - roformer - INFO - Step 8480 - loss: 4.5059, lr: 0.0000, epoch: 40
+2026-04-23 08:59:20 - roformer - INFO - Epoch 40 - Train Loss: 4.4779
+2026-04-23 08:59:54 - roformer - INFO - Epoch 40 - Val Loss: 4.6721
+2026-04-23 08:59:54 - roformer - INFO - New best model! Loss: 4.6721
+2026-04-23 09:00:22 - roformer - INFO - Step 8490 - loss: 4.5640, lr: 0.0000, epoch: 41
+2026-04-23 09:00:45 - roformer - INFO - Step 8500 - loss: 4.3452, lr: 0.0000, epoch: 41
+2026-04-23 09:01:04 - roformer - INFO - Step 8510 - loss: 4.5031, lr: 0.0000, epoch: 41
+2026-04-23 09:01:22 - roformer - INFO - Step 8520 - loss: 4.4588, lr: 0.0000, epoch: 41
+2026-04-23 09:01:43 - roformer - INFO - Step 8530 - loss: 4.5503, lr: 0.0000, epoch: 41
+2026-04-23 09:02:01 - roformer - INFO - Step 8540 - loss: 4.5057, lr: 0.0000, epoch: 41
+2026-04-23 09:02:23 - roformer - INFO - Step 8550 - loss: 4.4532, lr: 0.0000, epoch: 41
+2026-04-23 09:02:41 - roformer - INFO - Step 8560 - loss: 4.5609, lr: 0.0000, epoch: 41
+2026-04-23 09:03:04 - roformer - INFO - Step 8570 - loss: 4.3972, lr: 0.0000, epoch: 41
+2026-04-23 09:03:24 - roformer - INFO - Step 8580 - loss: 4.4411, lr: 0.0000, epoch: 41
+2026-04-23 09:03:44 - roformer - INFO - Step 8590 - loss: 4.5287, lr: 0.0000, epoch: 41
+2026-04-23 09:04:05 - roformer - INFO - Step 8600 - loss: 4.4879, lr: 0.0000, epoch: 41
+2026-04-23 09:04:36 - roformer - INFO - Step 8610 - loss: 4.5145, lr: 0.0000, epoch: 41
+2026-04-23 09:05:36 - roformer - INFO - Step 8620 - loss: 4.6714, lr: 0.0000, epoch: 41
+2026-04-23 09:06:23 - roformer - INFO - Step 8630 - loss: 4.4154, lr: 0.0000, epoch: 41
+2026-04-23 09:06:54 - roformer - INFO - Step 8640 - loss: 4.3601, lr: 0.0000, epoch: 41
+2026-04-23 09:07:25 - roformer - INFO - Step 8650 - loss: 4.4889, lr: 0.0000, epoch: 41
+2026-04-23 09:07:58 - roformer - INFO - Step 8660 - loss: 4.5331, lr: 0.0000, epoch: 41
+2026-04-23 09:08:29 - roformer - INFO - Step 8670 - loss: 4.5831, lr: 0.0000, epoch: 41
+2026-04-23 09:09:01 - roformer - INFO - Step 8680 - loss: 4.5218, lr: 0.0000, epoch: 41
+2026-04-23 09:09:28 - roformer - INFO - Step 8690 - loss: 4.2974, lr: 0.0000, epoch: 41
+2026-04-23 09:09:53 - roformer - INFO - Epoch 41 - Train Loss: 4.4755
+2026-04-23 09:10:26 - roformer - INFO - Epoch 41 - Val Loss: 4.6710
+2026-04-23 09:10:26 - roformer - INFO - New best model! Loss: 4.6710
+2026-04-23 09:26:05 - roformer - INFO - Step 8700 - loss: 4.4179, lr: 0.0000, epoch: 42
+2026-04-23 09:26:33 - roformer - INFO - Step 8710 - loss: 4.4220, lr: 0.0000, epoch: 42
+2026-04-23 09:27:03 - roformer - INFO - Step 8720 - loss: 4.3996, lr: 0.0000, epoch: 42
+2026-04-23 09:27:47 - roformer - INFO - Step 8730 - loss: 4.3687, lr: 0.0000, epoch: 42
+2026-04-23 09:28:36 - roformer - INFO - Step 8740 - loss: 4.4402, lr: 0.0000, epoch: 42
+2026-04-23 09:29:26 - roformer - INFO - Step 8750 - loss: 4.3056, lr: 0.0000, epoch: 42
+2026-04-23 09:30:14 - roformer - INFO - Step 8760 - loss: 4.5656, lr: 0.0000, epoch: 42
+2026-04-23 09:31:03 - roformer - INFO - Step 8770 - loss: 4.5416, lr: 0.0000, epoch: 42
+2026-04-23 09:31:52 - roformer - INFO - Step 8780 - loss: 4.4608, lr: 0.0000, epoch: 42
+2026-04-23 09:32:41 - roformer - INFO - Step 8790 - loss: 4.5053, lr: 0.0000, epoch: 42
+2026-04-23 09:33:30 - roformer - INFO - Step 8800 - loss: 4.4181, lr: 0.0000, epoch: 42
+2026-04-23 09:33:43 - roformer - INFO - Step 8810 - loss: 4.5013, lr: 0.0000, epoch: 42
+2026-04-23 09:33:54 - roformer - INFO - Step 8820 - loss: 4.6189, lr: 0.0000, epoch: 42
+2026-04-23 09:34:10 - roformer - INFO - Step 8830 - loss: 4.4948, lr: 0.0000, epoch: 42
+2026-04-23 09:34:26 - roformer - INFO - Step 8840 - loss: 4.4210, lr: 0.0000, epoch: 42
+2026-04-23 09:34:40 - roformer - INFO - Step 8850 - loss: 4.3805, lr: 0.0000, epoch: 42
+2026-04-23 09:34:52 - roformer - INFO - Step 8860 - loss: 4.4260, lr: 0.0000, epoch: 42
+2026-04-23 09:35:03 - roformer - INFO - Step 8870 - loss: 4.5274, lr: 0.0000, epoch: 42
+2026-04-23 09:35:12 - roformer - INFO - Step 8880 - loss: 4.3964, lr: 0.0000, epoch: 42
+2026-04-23 09:35:21 - roformer - INFO - Step 8890 - loss: 4.5197, lr: 0.0000, epoch: 42
+2026-04-23 09:35:33 - roformer - INFO - Step 8900 - loss: 4.4949, lr: 0.0000, epoch: 42
+2026-04-23 09:35:58 - roformer - INFO - Epoch 42 - Train Loss: 4.4732
+2026-04-23 09:36:34 - roformer - INFO - Epoch 42 - Val Loss: 4.6709
+2026-04-23 09:36:34 - roformer - INFO - New best model! Loss: 4.6709
+2026-04-23 09:36:53 - roformer - INFO - Step 8910 - loss: 4.4279, lr: 0.0000, epoch: 43
+2026-04-23 09:41:34 - roformer - INFO - Step 8920 - loss: 4.4657, lr: 0.0000, epoch: 43
+2026-04-23 09:41:42 - roformer - INFO - Step 8930 - loss: 4.5040, lr: 0.0000, epoch: 43
+2026-04-23 09:41:50 - roformer - INFO - Step 8940 - loss: 4.5905, lr: 0.0000, epoch: 43
+2026-04-23 09:42:02 - roformer - INFO - Step 8950 - loss: 4.4727, lr: 0.0000, epoch: 43
+2026-04-23 09:42:14 - roformer - INFO - Step 8960 - loss: 4.5483, lr: 0.0000, epoch: 43
+2026-04-23 09:42:23 - roformer - INFO - Step 8970 - loss: 4.4511, lr: 0.0000, epoch: 43
+2026-04-23 09:42:30 - roformer - INFO - Step 8980 - loss: 4.5232, lr: 0.0000, epoch: 43
+2026-04-23 09:42:38 - roformer - INFO - Step 8990 - loss: 4.5544, lr: 0.0000, epoch: 43
+2026-04-23 09:42:45 - roformer - INFO - Step 9000 - loss: 4.4703, lr: 0.0000, epoch: 43
+2026-04-23 09:42:53 - roformer - INFO - Step 9010 - loss: 4.5874, lr: 0.0000, epoch: 43
+2026-04-23 09:43:00 - roformer - INFO - Step 9020 - loss: 4.3614, lr: 0.0000, epoch: 43
+2026-04-23 09:43:08 - roformer - INFO - Step 9030 - loss: 4.5268, lr: 0.0000, epoch: 43
+2026-04-23 09:43:16 - roformer - INFO - Step 9040 - loss: 4.3942, lr: 0.0000, epoch: 43
+2026-04-23 09:43:27 - roformer - INFO - Step 9050 - loss: 4.5152, lr: 0.0000, epoch: 43
+2026-04-23 09:43:38 - roformer - INFO - Step 9060 - loss: 4.5612, lr: 0.0000, epoch: 43
+2026-04-23 09:43:47 - roformer - INFO - Step 9070 - loss: 4.4602, lr: 0.0000, epoch: 43
+2026-04-23 09:43:58 - roformer - INFO - Step 9080 - loss: 4.4644, lr: 0.0000, epoch: 43
+2026-04-23 09:44:07 - roformer - INFO - Step 9090 - loss: 4.4162, lr: 0.0000, epoch: 43
+2026-04-23 09:44:17 - roformer - INFO - Step 9100 - loss: 4.5056, lr: 0.0000, epoch: 43
+2026-04-23 09:44:27 - roformer - INFO - Step 9110 - loss: 4.4191, lr: 0.0000, epoch: 43
+2026-04-23 09:44:54 - roformer - INFO - Epoch 43 - Train Loss: 4.4717
+2026-04-23 09:45:21 - roformer - INFO - Epoch 43 - Val Loss: 4.6700
+2026-04-23 09:45:21 - roformer - INFO - New best model! Loss: 4.6700
+2026-04-23 09:45:43 - roformer - INFO - Step 9120 - loss: 4.4842, lr: 0.0000, epoch: 44
+2026-04-23 09:46:01 - roformer - INFO - Step 9130 - loss: 4.4898, lr: 0.0000, epoch: 44
+2026-04-23 09:46:18 - roformer - INFO - Step 9140 - loss: 4.4680, lr: 0.0000, epoch: 44
+2026-04-23 09:46:34 - roformer - INFO - Step 9150 - loss: 4.4545, lr: 0.0000, epoch: 44
+2026-04-23 09:47:01 - roformer - INFO - Step 9160 - loss: 4.4943, lr: 0.0000, epoch: 44
+2026-04-23 09:47:18 - roformer - INFO - Step 9170 - loss: 4.4910, lr: 0.0000, epoch: 44
+2026-04-23 09:47:38 - roformer - INFO - Step 9180 - loss: 4.5488, lr: 0.0000, epoch: 44
+2026-04-23 09:47:57 - roformer - INFO - Step 9190 - loss: 4.4312, lr: 0.0000, epoch: 44
+2026-04-23 09:48:14 - roformer - INFO - Step 9200 - loss: 4.4553, lr: 0.0000, epoch: 44
+2026-04-23 09:48:36 - roformer - INFO - Step 9210 - loss: 4.5703, lr: 0.0000, epoch: 44
+2026-04-23 09:49:03 - roformer - INFO - Step 9220 - loss: 4.4271, lr: 0.0000, epoch: 44
+2026-04-23 09:49:30 - roformer - INFO - Step 9230 - loss: 4.4827, lr: 0.0000, epoch: 44
+2026-04-23 09:50:09 - roformer - INFO - Step 9240 - loss: 4.5599, lr: 0.0000, epoch: 44
+2026-04-23 09:50:45 - roformer - INFO - Step 9250 - loss: 4.4527, lr: 0.0000, epoch: 44
+2026-04-23 09:51:57 - roformer - INFO - Step 9260 - loss: 4.5024, lr: 0.0000, epoch: 44
+2026-04-23 09:52:31 - roformer - INFO - Step 9270 - loss: 4.4624, lr: 0.0000, epoch: 44
+2026-04-23 09:53:07 - roformer - INFO - Step 9280 - loss: 4.5667, lr: 0.0000, epoch: 44
+2026-04-23 09:53:40 - roformer - INFO - Step 9290 - loss: 4.4530, lr: 0.0000, epoch: 44
+2026-04-23 09:54:13 - roformer - INFO - Step 9300 - loss: 4.3027, lr: 0.0000, epoch: 44
+2026-04-23 09:54:52 - roformer - INFO - Step 9310 - loss: 4.3760, lr: 0.0000, epoch: 44
+2026-04-23 09:55:49 - roformer - INFO - Step 9320 - loss: 4.4589, lr: 0.0000, epoch: 44
+2026-04-23 10:01:54 - roformer - INFO - Epoch 44 - Train Loss: 4.4708
+2026-04-23 10:02:34 - roformer - INFO - Epoch 44 - Val Loss: 4.6698
+2026-04-23 10:02:34 - roformer - INFO - New best model! Loss: 4.6698
+2026-04-23 10:02:48 - roformer - INFO - Step 9330 - loss: 4.4189, lr: 0.0000, epoch: 45
+2026-04-23 10:03:09 - roformer - INFO - Step 9340 - loss: 4.4744, lr: 0.0000, epoch: 45
+2026-04-23 10:03:26 - roformer - INFO - Step 9350 - loss: 4.4390, lr: 0.0000, epoch: 45
+2026-04-23 10:03:35 - roformer - INFO - Step 9360 - loss: 4.4390, lr: 0.0000, epoch: 45
+2026-04-23 10:03:47 - roformer - INFO - Step 9370 - loss: 4.5592, lr: 0.0000, epoch: 45
+2026-04-23 10:04:27 - roformer - INFO - Step 9380 - loss: 4.5816, lr: 0.0000, epoch: 45
+2026-04-23 10:04:43 - roformer - INFO - Step 9390 - loss: 4.4150, lr: 0.0000, epoch: 45
+2026-04-23 10:05:02 - roformer - INFO - Step 9400 - loss: 4.4164, lr: 0.0000, epoch: 45
+2026-04-23 10:05:24 - roformer - INFO - Step 9410 - loss: 4.5332, lr: 0.0000, epoch: 45
+2026-04-23 10:05:45 - roformer - INFO - Step 9420 - loss: 4.4255, lr: 0.0000, epoch: 45
+2026-04-23 10:06:07 - roformer - INFO - Step 9430 - loss: 4.4981, lr: 0.0000, epoch: 45
+2026-04-23 10:06:43 - roformer - INFO - Step 9440 - loss: 4.3133, lr: 0.0000, epoch: 45
+2026-04-23 10:07:05 - roformer - INFO - Step 9450 - loss: 4.4712, lr: 0.0000, epoch: 45
+2026-04-23 10:07:35 - roformer - INFO - Step 9460 - loss: 4.4973, lr: 0.0000, epoch: 45
+2026-04-23 10:08:17 - roformer - INFO - Step 9470 - loss: 4.4591, lr: 0.0000, epoch: 45
+2026-04-23 10:08:49 - roformer - INFO - Step 9480 - loss: 4.4884, lr: 0.0000, epoch: 45
+2026-04-23 10:09:16 - roformer - INFO - Step 9490 - loss: 4.3793, lr: 0.0000, epoch: 45
+2026-04-23 10:09:47 - roformer - INFO - Step 9500 - loss: 4.3991, lr: 0.0000, epoch: 45
+2026-04-23 10:10:13 - roformer - INFO - Step 9510 - loss: 4.4310, lr: 0.0000, epoch: 45
+2026-04-23 10:10:38 - roformer - INFO - Step 9520 - loss: 4.4881, lr: 0.0000, epoch: 45
+2026-04-23 10:11:56 - roformer - INFO - Step 9530 - loss: 4.4339, lr: 0.0000, epoch: 45
+2026-04-23 10:12:39 - roformer - INFO - Step 9540 - loss: 4.4143, lr: 0.0000, epoch: 45
+2026-04-23 10:12:59 - roformer - INFO - Epoch 45 - Train Loss: 4.4696
+2026-04-23 10:13:33 - roformer - INFO - Epoch 45 - Val Loss: 4.6695
+2026-04-23 10:13:33 - roformer - INFO - New best model! Loss: 4.6695
+2026-04-23 10:14:02 - roformer - INFO - Step 9550 - loss: 4.4992, lr: 0.0000, epoch: 46
+2026-04-23 10:14:19 - roformer - INFO - Step 9560 - loss: 4.5695, lr: 0.0000, epoch: 46
+2026-04-23 10:14:39 - roformer - INFO - Step 9570 - loss: 4.4528, lr: 0.0000, epoch: 46
+2026-04-23 10:14:58 - roformer - INFO - Step 9580 - loss: 4.4313, lr: 0.0000, epoch: 46
+2026-04-23 10:15:21 - roformer - INFO - Step 9590 - loss: 4.3909, lr: 0.0000, epoch: 46
+2026-04-23 10:15:41 - roformer - INFO - Step 9600 - loss: 4.4180, lr: 0.0000, epoch: 46
+2026-04-23 10:16:00 - roformer - INFO - Step 9610 - loss: 4.4962, lr: 0.0000, epoch: 46
+2026-04-23 10:16:30 - roformer - INFO - Step 9620 - loss: 4.5559, lr: 0.0000, epoch: 46
+2026-04-23 10:17:28 - roformer - INFO - Step 9630 - loss: 4.4824, lr: 0.0000, epoch: 46
+2026-04-23 10:17:58 - roformer - INFO - Step 9640 - loss: 4.5184, lr: 0.0000, epoch: 46
+2026-04-23 10:18:23 - roformer - INFO - Step 9650 - loss: 4.3782, lr: 0.0000, epoch: 46
+2026-04-23 10:18:45 - roformer - INFO - Step 9660 - loss: 4.4583, lr: 0.0000, epoch: 46
+2026-04-23 10:19:16 - roformer - INFO - Step 9670 - loss: 4.4640, lr: 0.0000, epoch: 46
+2026-04-23 10:19:45 - roformer - INFO - Step 9680 - loss: 4.3421, lr: 0.0000, epoch: 46
+2026-04-23 10:20:19 - roformer - INFO - Step 9690 - loss: 4.3758, lr: 0.0000, epoch: 46
+2026-04-23 10:20:53 - roformer - INFO - Step 9700 - loss: 4.3721, lr: 0.0000, epoch: 46
+2026-04-23 10:22:19 - roformer - INFO - Step 9710 - loss: 4.4907, lr: 0.0000, epoch: 46
+2026-04-23 10:23:01 - roformer - INFO - Step 9720 - loss: 4.3846, lr: 0.0000, epoch: 46
+2026-04-23 10:24:24 - roformer - INFO - Step 9730 - loss: 4.4389, lr: 0.0000, epoch: 46
+2026-04-23 10:24:45 - roformer - INFO - Step 9740 - loss: 4.4892, lr: 0.0000, epoch: 46
+2026-04-23 10:25:05 - roformer - INFO - Step 9750 - loss: 4.3597, lr: 0.0000, epoch: 46
+2026-04-23 10:25:30 - roformer - INFO - Epoch 46 - Train Loss: 4.4680
+2026-04-23 10:26:05 - roformer - INFO - Epoch 46 - Val Loss: 4.6696
+2026-04-23 10:26:24 - roformer - INFO - Step 9760 - loss: 4.4924, lr: 0.0000, epoch: 47
+2026-04-23 10:26:49 - roformer - INFO - Step 9770 - loss: 4.4228, lr: 0.0000, epoch: 47
+2026-04-23 10:27:10 - roformer - INFO - Step 9780 - loss: 4.5731, lr: 0.0000, epoch: 47
+2026-04-23 10:27:30 - roformer - INFO - Step 9790 - loss: 4.5689, lr: 0.0000, epoch: 47
+2026-04-23 10:27:50 - roformer - INFO - Step 9800 - loss: 4.4330, lr: 0.0000, epoch: 47
+2026-04-23 10:28:19 - roformer - INFO - Step 9810 - loss: 4.4264, lr: 0.0000, epoch: 47
+2026-04-23 10:28:40 - roformer - INFO - Step 9820 - loss: 4.4782, lr: 0.0000, epoch: 47
+2026-04-23 10:29:12 - roformer - INFO - Step 9830 - loss: 4.6158, lr: 0.0000, epoch: 47
+2026-04-23 10:29:44 - roformer - INFO - Step 9840 - loss: 4.4555, lr: 0.0000, epoch: 47
+2026-04-23 10:30:10 - roformer - INFO - Step 9850 - loss: 4.4743, lr: 0.0000, epoch: 47
+2026-04-23 10:30:49 - roformer - INFO - Step 9860 - loss: 4.5663, lr: 0.0000, epoch: 47
+2026-04-23 10:31:55 - roformer - INFO - Step 9870 - loss: 4.5281, lr: 0.0000, epoch: 47
+2026-04-23 10:33:40 - roformer - INFO - Step 9880 - loss: 4.4650, lr: 0.0000, epoch: 47
+2026-04-23 10:34:22 - roformer - INFO - Step 9890 - loss: 4.5497, lr: 0.0000, epoch: 47
+2026-04-23 10:35:31 - roformer - INFO - Step 9900 - loss: 4.5931, lr: 0.0000, epoch: 47
+2026-04-23 10:35:56 - roformer - INFO - Step 9910 - loss: 4.4952, lr: 0.0000, epoch: 47
+2026-04-23 10:36:21 - roformer - INFO - Step 9920 - loss: 4.4567, lr: 0.0000, epoch: 47
+2026-04-23 10:37:04 - roformer - INFO - Step 9930 - loss: 4.5234, lr: 0.0000, epoch: 47
+2026-04-23 10:37:48 - roformer - INFO - Step 9940 - loss: 4.4704, lr: 0.0000, epoch: 47
+2026-04-23 10:38:26 - roformer - INFO - Step 9950 - loss: 4.4889, lr: 0.0000, epoch: 47
+2026-04-23 10:39:14 - roformer - INFO - Step 9960 - loss: 4.5454, lr: 0.0000, epoch: 47
+2026-04-23 10:39:50 - roformer - INFO - Epoch 47 - Train Loss: 4.4683
+2026-04-23 10:40:28 - roformer - INFO - Epoch 47 - Val Loss: 4.6694
+2026-04-23 10:40:28 - roformer - INFO - New best model! Loss: 4.6694
+2026-04-23 10:40:54 - roformer - INFO - Step 9970 - loss: 4.5245, lr: 0.0000, epoch: 48
+2026-04-23 10:41:14 - roformer - INFO - Step 9980 - loss: 4.4955, lr: 0.0000, epoch: 48
+2026-04-23 10:41:34 - roformer - INFO - Step 9990 - loss: 4.4979, lr: 0.0000, epoch: 48
+2026-04-23 10:42:03 - roformer - INFO - Step 10000 - loss: 4.5010, lr: 0.0000, epoch: 48
+2026-04-23 10:42:28 - roformer - INFO - Step 10010 - loss: 4.4595, lr: 0.0000, epoch: 48
+2026-04-23 10:43:26 - roformer - INFO - Step 10020 - loss: 4.4660, lr: 0.0000, epoch: 48
+2026-04-23 10:43:47 - roformer - INFO - Step 10030 - loss: 4.4655, lr: 0.0000, epoch: 48
+2026-04-23 10:44:10 - roformer - INFO - Step 10040 - loss: 4.4943, lr: 0.0000, epoch: 48
+2026-04-23 10:45:12 - roformer - INFO - Step 10050 - loss: 4.3496, lr: 0.0000, epoch: 48
+2026-04-23 10:45:33 - roformer - INFO - Step 10060 - loss: 4.5557, lr: 0.0000, epoch: 48
+2026-04-23 10:46:07 - roformer - INFO - Step 10070 - loss: 4.5459, lr: 0.0000, epoch: 48
+2026-04-23 10:46:32 - roformer - INFO - Step 10080 - loss: 4.5450, lr: 0.0000, epoch: 48
+2026-04-23 10:46:53 - roformer - INFO - Step 10090 - loss: 4.3807, lr: 0.0000, epoch: 48
+2026-04-23 10:47:12 - roformer - INFO - Step 10100 - loss: 4.3916, lr: 0.0000, epoch: 48
+2026-04-23 10:48:16 - roformer - INFO - Step 10110 - loss: 4.3536, lr: 0.0000, epoch: 48
+2026-04-23 10:48:47 - roformer - INFO - Step 10120 - loss: 4.5806, lr: 0.0000, epoch: 48
+2026-04-23 10:49:17 - roformer - INFO - Step 10130 - loss: 4.4225, lr: 0.0000, epoch: 48
+2026-04-23 10:50:35 - roformer - INFO - Step 10140 - loss: 4.3815, lr: 0.0000, epoch: 48
+2026-04-23 10:51:04 - roformer - INFO - Step 10150 - loss: 4.4364, lr: 0.0000, epoch: 48
+2026-04-23 10:52:08 - roformer - INFO - Step 10160 - loss: 4.3444, lr: 0.0000, epoch: 48
+2026-04-23 10:52:40 - roformer - INFO - Step 10170 - loss: 4.5535, lr: 0.0000, epoch: 48
+2026-04-23 10:53:36 - roformer - INFO - Epoch 48 - Train Loss: 4.4678
+2026-04-23 10:54:16 - roformer - INFO - Epoch 48 - Val Loss: 4.6692
+2026-04-23 10:54:16 - roformer - INFO - New best model! Loss: 4.6692
+2026-04-23 10:54:32 - roformer - INFO - Step 10180 - loss: 4.3867, lr: 0.0000, epoch: 49
+2026-04-23 10:54:56 - roformer - INFO - Step 10190 - loss: 4.4411, lr: 0.0000, epoch: 49
+2026-04-23 10:55:29 - roformer - INFO - Step 10200 - loss: 4.4003, lr: 0.0000, epoch: 49
+2026-04-23 10:55:49 - roformer - INFO - Step 10210 - loss: 4.5959, lr: 0.0000, epoch: 49
+2026-04-23 10:56:13 - roformer - INFO - Step 10220 - loss: 4.5008, lr: 0.0000, epoch: 49
+2026-04-23 10:56:40 - roformer - INFO - Step 10230 - loss: 4.5366, lr: 0.0000, epoch: 49
+2026-04-23 10:57:18 - roformer - INFO - Step 10240 - loss: 4.5693, lr: 0.0000, epoch: 49
+2026-04-23 10:58:00 - roformer - INFO - Step 10250 - loss: 4.5270, lr: 0.0000, epoch: 49
+2026-04-23 10:58:39 - roformer - INFO - Step 10260 - loss: 4.5567, lr: 0.0000, epoch: 49
+2026-04-23 10:59:18 - roformer - INFO - Step 10270 - loss: 4.3207, lr: 0.0000, epoch: 49
+2026-04-23 11:00:38 - roformer - INFO - Step 10280 - loss: 4.4661, lr: 0.0000, epoch: 49
+2026-04-23 11:01:25 - roformer - INFO - Step 10290 - loss: 4.3741, lr: 0.0000, epoch: 49
+2026-04-23 11:01:54 - roformer - INFO - Step 10300 - loss: 4.3971, lr: 0.0000, epoch: 49
+2026-04-23 11:02:36 - roformer - INFO - Step 10310 - loss: 4.6283, lr: 0.0000, epoch: 49
+2026-04-23 11:03:18 - roformer - INFO - Step 10320 - loss: 4.5074, lr: 0.0000, epoch: 49
+2026-04-23 11:03:39 - roformer - INFO - Step 10330 - loss: 4.4626, lr: 0.0000, epoch: 49
+2026-04-23 11:04:08 - roformer - INFO - Step 10340 - loss: 4.4877, lr: 0.0000, epoch: 49
+2026-04-23 11:04:30 - roformer - INFO - Step 10350 - loss: 4.4533, lr: 0.0000, epoch: 49
+2026-04-23 11:05:30 - roformer - INFO - Step 10360 - loss: 4.5827, lr: 0.0000, epoch: 49
+2026-04-23 11:06:10 - roformer - INFO - Step 10370 - loss: 4.3606, lr: 0.0000, epoch: 49
+2026-04-23 11:07:20 - roformer - INFO - Step 10380 - loss: 4.3934, lr: 0.0000, epoch: 49
+2026-04-23 11:07:58 - roformer - INFO - Epoch 49 - Train Loss: 4.4658
+2026-04-23 11:08:38 - roformer - INFO - Epoch 49 - Val Loss: 4.6685
+2026-04-23 11:08:38 - roformer - INFO - New best model! Loss: 4.6685
+2026-04-23 11:08:52 - roformer - INFO - Step 10390 - loss: 4.3458, lr: 0.0000, epoch: 50
+2026-04-23 11:09:20 - roformer - INFO - Step 10400 - loss: 4.4782, lr: 0.0000, epoch: 50
+2026-04-23 11:09:41 - roformer - INFO - Step 10410 - loss: 4.5428, lr: 0.0000, epoch: 50
+2026-04-23 11:10:04 - roformer - INFO - Step 10420 - loss: 4.3676, lr: 0.0000, epoch: 50
+2026-04-23 11:10:26 - roformer - INFO - Step 10430 - loss: 4.4241, lr: 0.0000, epoch: 50
+2026-04-23 11:10:55 - roformer - INFO - Step 10440 - loss: 4.4357, lr: 0.0000, epoch: 50
+2026-04-23 11:11:25 - roformer - INFO - Step 10450 - loss: 4.4301, lr: 0.0000, epoch: 50
+2026-04-23 11:11:50 - roformer - INFO - Step 10460 - loss: 4.4586, lr: 0.0000, epoch: 50
+2026-04-23 11:12:15 - roformer - INFO - Step 10470 - loss: 4.5393, lr: 0.0000, epoch: 50
+2026-04-23 11:12:48 - roformer - INFO - Step 10480 - loss: 4.4472, lr: 0.0000, epoch: 50
+2026-04-23 11:14:15 - roformer - INFO - Step 10490 - loss: 4.4969, lr: 0.0000, epoch: 50
+2026-04-23 11:14:39 - roformer - INFO - Step 10500 - loss: 4.4393, lr: 0.0000, epoch: 50
+2026-04-23 11:15:00 - roformer - INFO - Step 10510 - loss: 4.4612, lr: 0.0000, epoch: 50
+2026-04-23 11:15:19 - roformer - INFO - Step 10520 - loss: 4.3717, lr: 0.0000, epoch: 50
+2026-04-23 11:15:37 - roformer - INFO - Step 10530 - loss: 4.3666, lr: 0.0000, epoch: 50
+2026-04-23 11:15:55 - roformer - INFO - Step 10540 - loss: 4.4033, lr: 0.0000, epoch: 50
+2026-04-23 11:16:13 - roformer - INFO - Step 10550 - loss: 4.6125, lr: 0.0000, epoch: 50
+2026-04-23 11:16:30 - roformer - INFO - Step 10560 - loss: 4.3026, lr: 0.0000, epoch: 50
+2026-04-23 11:16:47 - roformer - INFO - Step 10570 - loss: 4.3986, lr: 0.0000, epoch: 50
+2026-04-23 11:17:14 - roformer - INFO - Step 10580 - loss: 4.5309, lr: 0.0000, epoch: 50
+2026-04-23 11:17:36 - roformer - INFO - Step 10590 - loss: 4.5305, lr: 0.0000, epoch: 50
+2026-04-23 11:18:17 - roformer - INFO - Step 10600 - loss: 4.3550, lr: 0.0000, epoch: 50
+2026-04-23 12:08:03 - roformer - INFO - Epoch 50 - Train Loss: 4.4647
+2026-04-23 13:14:32 - roformer - INFO - Epoch 50 - Val Loss: 4.6676
+2026-04-23 13:14:32 - roformer - INFO - New best model! Loss: 4.6676
+2026-04-23 13:14:35 - roformer - INFO - Training completed!
+2026-04-23 13:14:35 - roformer - INFO - Best validation loss: 4.6676
+2026-04-23 13:14:35 - roformer - INFO - Running final evaluation...
+2026-04-23 13:32:17 - roformer - INFO - Final perplexity: 94.41

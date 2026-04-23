@@ -20,6 +20,11 @@ class ModelConfig:
     max_position_embeddings: int = 512
     dropout: float = 0.1
     pad_token_id: int = 0
+    
+    def __post_init__(self):
+        """Ensure numeric types are correct"""
+        if isinstance(self.dropout, str):
+            self.dropout = float(self.dropout)
 
 
 @dataclass
@@ -34,6 +39,15 @@ class TrainingConfig:
     gradient_accumulation_steps: int = 1
     fp16: bool = False
     bf16: bool = False
+    
+    def __post_init__(self):
+        """Ensure numeric types are correct"""
+        if isinstance(self.learning_rate, str):
+            self.learning_rate = float(self.learning_rate)
+        if isinstance(self.weight_decay, str):
+            self.weight_decay = float(self.weight_decay)
+        if isinstance(self.max_grad_norm, str):
+            self.max_grad_norm = float(self.max_grad_norm)
 
 
 @dataclass
@@ -46,6 +60,15 @@ class DataConfig:
     test_split: float = 0.05
     shuffle: bool = True
     num_workers: int = 4
+    
+    def __post_init__(self):
+        """Ensure numeric types are correct"""
+        if isinstance(self.train_split, str):
+            self.train_split = float(self.train_split)
+        if isinstance(self.val_split, str):
+            self.val_split = float(self.val_split)
+        if isinstance(self.test_split, str):
+            self.test_split = float(self.test_split)
 
 
 @dataclass
@@ -86,6 +109,13 @@ class OptimizerConfig:
     type: str = "adamw"
     betas: List[float] = field(default_factory=lambda: [0.9, 0.999])
     eps: float = 1e-8
+    
+    def __post_init__(self):
+        """Ensure numeric types are correct"""
+        if isinstance(self.eps, str):
+            self.eps = float(self.eps)
+        if isinstance(self.betas, list):
+            self.betas = [float(b) if isinstance(b, str) else b for b in self.betas]
 
 
 @dataclass
@@ -94,6 +124,13 @@ class SchedulerConfig:
     type: str = "cosine"  # cosine, linear, constant
     warmup_ratio: float = 0.1
     min_lr: float = 1e-6
+    
+    def __post_init__(self):
+        """Ensure numeric types are correct"""
+        if isinstance(self.warmup_ratio, str):
+            self.warmup_ratio = float(self.warmup_ratio)
+        if isinstance(self.min_lr, str):
+            self.min_lr = float(self.min_lr)
 
 
 @dataclass

@@ -1,0 +1,8 @@
+2026-04-22 07:24:06 - roformer - INFO - Using device: mps
+2026-04-22 07:24:06 - roformer - INFO - Loading training data...
+2026-04-22 07:24:06 - roformer - INFO - Loaded 3764 text chunks
+2026-04-22 07:24:06 - roformer - INFO - Tokenizer built with 5000 words
+2026-04-22 07:24:06 - roformer - INFO - Train: 3387, Val: 188, Test: 189
+2026-04-22 07:24:06 - roformer - INFO - Creating model...
+2026-04-22 07:24:06 - roformer - INFO - Total parameters: 27,780,096
+2026-04-22 07:24:06 - roformer - INFO - Trainable parameters: 27,780,096

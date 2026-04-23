@@ -156,7 +156,17 @@ generated = model.generate(prompt_ids, max_new_tokens=50)
 
 ## Benchmarks
 
-Current benchmark results (12.5M parameter model):
+### Latest Training Results (27.8M parameter model, 50 epochs)
+
+- **Perplexity**: 94.41 (46% improvement over previous)
+- **Generation Speed**: 30.0 tokens/sec (MPS)
+- **Memory Overhead**: -7.6 MB (efficient)
+- **Coherence Score**: 0.814
+- **Validation Loss**: 4.6676
+
+See `TRAINING_RESULTS.md` for detailed analysis and training progress.
+
+### Previous Results (12.5M parameter model, 5 epochs)
 
 - **Perplexity**: 174.34
 - **Generation Speed**: 40.8 tokens/sec (MPS)

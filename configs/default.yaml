@@ -1,7 +1,6 @@
 # Default configuration for RoFormer LLM training
 
 model:
-  name: "roformer-llm"
   vocab_size: 5000
   embed_dim: 512
   num_heads: 8
