@@ -1,33 +1,82 @@
-# RoFormer LLM
+# RoFormer LLM & DevelAI
 
-A professional decoder-only transformer language model enhanced with Rotary Position Embeddings (RoPE) from the RoFormer paper.
+A professional decoder-only transformer language model enhanced with Rotary Position Embeddings (RoPE) from the RoFormer paper, plus DevelAI - a novel developmental intelligence architecture.
 
 ## Overview
 
-This project implements a production-ready GPT-style autoregressive language model that uses RoFormer's rotary position embeddings. RoPE encodes position information by rotating query and key vectors, naturally incorporating relative position dependency in the attention mechanism.
+This project has two main components:
+
+### 1. RoFormer LLM
+A production-ready GPT-style autoregressive language model that uses RoFormer's rotary position embeddings. RoPE encodes position information by rotating query and key vectors, naturally incorporating relative position dependency in the attention mechanism.
+
+### 2. DevelAI (Developmental Intelligence Architecture)
+A radical paradigm shift: building intelligence BEFORE language, mimicking biological development. Unlike current AI that starts with language and tries to build "understanding," DevelAI builds foundational intelligence (motor, sensory, spatial) first, then adds language as a communication interface.
+
+**Key Insight**: Language is a tool for communication, not the foundation of intelligence. A child learns movement and spatial awareness in the womb, then learns words later. DevelAI follows this biological trajectory.
+
+## DevelAI Developmental Stages
+
+DevelAI follows a biological developmental trajectory:
+
+### Stage 1: Motor Learning (Current - In Progress)
+- **Goal**: Learn to control a robotic arm in a physics simulation
+- **Components**: MotorCortex, Cerebellum, BasalGanglia
+- **Task**: Object manipulation (reach, grasp, move objects)
+- **Status**: Training overnight (10,000 episodes)
+- **No language yet** - just pure motor intelligence
+
+### Stage 2: Cognitive Development (Planned)
+- **Goal**: Build planning, memory, causal reasoning
+- **Components**: Memory systems, attention mechanisms, decision making
+- **Tasks**: Complex problem solving, multi-step planning
+- **Still no language** - building cognitive intelligence
+
+### Stage 3: Language Interface (Planned)
+- **Goal**: Add language as communication layer
+- **How words fit**: Language maps internal representations to words
+- **How sentences fit**: Sentences express complex internal states and intents
+- **Key difference**: Language is OUTPUT/INPUT, not the intelligence itself
+- **Example**: The system "knows" how to grasp an object (Stage 1), then learns to say "I'm grasping the object" (Stage 3)
+
+**Why this works**: The system already has intelligence (can do tasks). Language is just a way to communicate what it's doing/thinking. This is how humans work - we can do things before we can describe them in words.
 
 ## Project Structure
 
 ```
 roformer-llm/
 ├── src/
-│   └── roformer/
-│       ├── model/          # Model components (RoPE, attention, LLM)
-│       ├── data/           # Data loading, tokenization, preprocessing
-│       ├── training/       # Training utilities (checkpointing)
-│       ├── utils/          # Configuration, logging, hardware detection
-│       └── evaluation/     # Benchmarks and evaluation metrics
+│   ├── roformer/           # RoFormer LLM components
+│   │   ├── model/          # Model components (RoPE, attention, LLM)
+│   │   ├── data/           # Data loading, tokenization, preprocessing
+│   │   ├── training/       # Training utilities (checkpointing)
+│   │   ├── utils/          # Configuration, logging, hardware detection
+│   │   └── evaluation/     # Benchmarks and evaluation metrics
+│   └── develai/            # DevelAI developmental intelligence
+│       ├── simulation.py   # Physics simulation environment
+│       ├── motor.py        # Motor control networks
+│       ├── sensory.py      # Sensory processing (planned)
+│       ├── cognitive.py    # Cognitive development (planned)
+│       └── language.py     # Language interface (planned)
 ├── configs/                # YAML configuration files
 ├── scripts/                # Training and evaluation scripts
+│   ├── train_deep.py       # RoFormer training
+│   └── train_motor.py      # DevelAI motor learning
 ├── data/                   # Data storage (raw and processed)
 ├── checkpoints/            # Model checkpoints
+│   └── develai/            # DevelAI motor learning checkpoints
 ├── logs/                   # Training logs
+├── results/                # Training results
+│   └── develai/            # DevelAI training data
 ├── tests/                  # Unit tests
 └── docs/                   # Documentation
+    ├── DEVELAI_RESEARCH.md # DevelAI research plan
+    ├── MLPE_RESEARCH.md    # Meta-Learned PE research
+    └── COMMLM_RESEARCH.md  # Communication-Centric LM research
 ```
 
 ## Key Features
 
+### RoFormer LLM
 - **Rotary Position Embeddings (RoPE)**: Mathematically correct implementation from RoFormer paper
 - **Hardware Auto-Detection**: Automatically optimizes for CUDA, MPS (Apple Silicon), or CPU
 - **Professional Training Loop**: Learning rate scheduling, checkpointing, logging, validation
@@ -35,6 +84,13 @@ roformer-llm/
 - **Configuration Management**: YAML-based configuration system
 - **Standard Benchmarks**: Perplexity, generation speed, memory usage, coherence
 - **Production Ready**: Proper logging, checkpointing, and error handling
+
+### DevelAI
+- **Biologically-Inspired Development**: Motor → Cognitive → Language
+- **Physics Simulation**: 2D environment for embodied learning
+- **Neural Motor Control**: MotorCortex, Cerebellum, BasalGanglia networks
+- **Intelligence First**: Builds capabilities before adding language
+- **Language as Interface**: Words/sentences map to existing intelligence
 
 ## Installation
 
@@ -95,6 +151,17 @@ python scripts/demo.py
 
 # Batch generation
 python scripts/demo.py --batch
+```
+
+### 6. Train DevelAI (Developmental Intelligence)
+
+```bash
+# Stage 1: Motor learning
+python scripts/train_motor.py
+
+# This trains the motor system to control a robotic arm
+# Checkpoints saved to checkpoints/develai/
+# Results saved to results/develai/training_data.txt
 ```
 
 ## Configuration

@@ -187,11 +187,11 @@ def test_motor_system(motor_system, num_episodes: int = 10):
 
 
 if __name__ == "__main__":
-    # Train motor system
+    # Train motor system (overnight training)
     motor_system, rewards, lengths, grasps = train_motor_system(
-        num_episodes=1000,
+        num_episodes=10000,  # Extended for overnight training
         max_steps=200,
-        save_every=100
+        save_every=500
     )
     
     # Test trained system
