@@ -20,11 +20,18 @@ class ModelConfig:
     max_position_embeddings: int = 512
     dropout: float = 0.1
     pad_token_id: int = 0
+    use_yarn: bool = False  # Enable YaRN scaling for better extrapolation
+    yarn_alpha: float = 1.0  # YaRN alpha parameter
+    yarn_beta: float = 0.1  # YaRN beta parameter
     
     def __post_init__(self):
         """Ensure numeric types are correct"""
         if isinstance(self.dropout, str):
             self.dropout = float(self.dropout)
+        if isinstance(self.yarn_alpha, str):
+            self.yarn_alpha = float(self.yarn_alpha)
+        if isinstance(self.yarn_beta, str):
+            self.yarn_beta = float(self.yarn_beta)
 
 
 @dataclass
@@ -48,6 +55,10 @@ class TrainingConfig:
             self.weight_decay = float(self.weight_decay)
         if isinstance(self.max_grad_norm, str):
             self.max_grad_norm = float(self.max_grad_norm)
+        if isinstance(self.fp16, str):
+            self.fp16 = self.fp16.lower() in ('true', '1', 'yes')
+        if isinstance(self.bf16, str):
+            self.bf16 = self.bf16.lower() in ('true', '1', 'yes')
 
 
 @dataclass

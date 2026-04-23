@@ -3,27 +3,31 @@ Demo script for RoFormer LLM
 Shows how to use the trained model for text generation
 """
 
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
+
 import torch
-from model import RoFormerLLM, RoFormerLLMConfig
-from tokenizer import SimpleTokenizer
+from roformer.model.llm import RoFormerLLM, RoFormerLLMConfig
 
 
-def load_model(checkpoint_path='roformer_llm.pt'):
+def load_model(checkpoint_path='checkpoints/best_model.pt'):
     """Load trained model from checkpoint"""
     checkpoint = torch.load(checkpoint_path, map_location='cpu', weights_only=False)
     
-    config_dict = checkpoint['config']
-    config = RoFormerLLMConfig.from_dict(config_dict)
+    # Get model config from checkpoint
+    config_dict = checkpoint['config']['model']
     
     model = RoFormerLLM(
-        vocab_size=config.vocab_size,
-        embed_dim=config.embed_dim,
-        num_heads=config.num_heads,
-        num_layers=config.num_layers,
-        ff_dim=config.ff_dim,
-        max_position_embeddings=config.max_position_embeddings,
-        dropout=config.dropout,
-        pad_token_id=config.pad_token_id
+        vocab_size=config_dict['vocab_size'],
+        embed_dim=config_dict['embed_dim'],
+        num_heads=config_dict['num_heads'],
+        num_layers=config_dict['num_layers'],
+        ff_dim=config_dict['ff_dim'],
+        max_position_embeddings=config_dict['max_position_embeddings'],
+        dropout=config_dict['dropout'],
+        pad_token_id=config_dict['pad_token_id']
     )
     
     model.load_state_dict(checkpoint['model_state_dict'])
@@ -40,8 +44,8 @@ def generate_text(model, tokenizer, prompt, max_new_tokens=50, temperature=0.8, 
     model = model.to(device)
     
     # Encode prompt
-    prompt_ids = tokenizer.encode(prompt, max_length=100, add_eos=False)
-    prompt_ids = prompt_ids.unsqueeze(0).to(device)
+    prompt_ids = tokenizer.encode(prompt, max_length=100, add_bos=False, add_eos=False)
+    prompt_ids = torch.tensor(prompt_ids).unsqueeze(0).to(device)
     
     # Generate
     with torch.no_grad():

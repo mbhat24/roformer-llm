@@ -6,6 +6,8 @@ import torch
 import torch.nn as nn
 import math
 from .rope import RotaryPositionEmbedding
+from .yarn_rope import YarnRotaryEmbedding
+from .rmsnorm import RMSNorm
 
 
 class MultiHeadAttention(nn.Module):
@@ -16,13 +18,16 @@ class MultiHeadAttention(nn.Module):
     enhanced with RoFormer's rotary position embeddings.
     """
     
-    def __init__(self, embed_dim, num_heads, max_position_embeddings=2048, dropout=0.1):
+    def __init__(self, embed_dim, num_heads, max_position_embeddings=2048, dropout=0.1, use_yarn=False, yarn_alpha=1.0, yarn_beta=0.1):
         """
         Args:
             embed_dim: Total dimension of the model
             num_heads: Number of attention heads
             max_position_embeddings: Maximum sequence length for RoPE
             dropout: Dropout probability
+            use_yarn: Whether to use YaRN scaling for better extrapolation
+            yarn_alpha: Alpha parameter for YaRN
+            yarn_beta: Beta parameter for YaRN
         """
         super().__init__()
         assert embed_dim % num_heads == 0, "embed_dim must be divisible by num_heads"
@@ -38,11 +43,19 @@ class MultiHeadAttention(nn.Module):
         self.v_proj = nn.Linear(embed_dim, embed_dim)
         self.out_proj = nn.Linear(embed_dim, embed_dim)
         
-        # Rotary Position Embedding
-        self.rope = RotaryPositionEmbedding(
-            self.head_dim,
-            max_position_embeddings=max_position_embeddings
-        )
+        # Rotary Position Embedding (use YaRN if enabled)
+        if use_yarn:
+            self.rope = YarnRotaryEmbedding(
+                self.head_dim,
+                max_position_embeddings=max_position_embeddings,
+                alpha=yarn_alpha,
+                beta=yarn_beta
+            )
+        else:
+            self.rope = RotaryPositionEmbedding(
+                self.head_dim,
+                max_position_embeddings=max_position_embeddings
+            )
         
         self.dropout = nn.Dropout(dropout)
     
@@ -111,7 +124,8 @@ class MultiHeadAttention(nn.Module):
 
 class FeedForward(nn.Module):
     """
-    Position-wise Feed-Forward Network
+    Position-wise Feed-Forward Network with SwiGLU activation
+    SwiGLU is used in modern architectures like PaLM and LLaMA
     """
     
     def __init__(self, embed_dim, ff_dim, dropout=0.1):
@@ -122,16 +136,20 @@ class FeedForward(nn.Module):
             dropout: Dropout probability
         """
         super().__init__()
-        self.net = nn.Sequential(
-            nn.Linear(embed_dim, ff_dim),
-            nn.GELU(),
-            nn.Dropout(dropout),
-            nn.Linear(ff_dim, embed_dim),
-            nn.Dropout(dropout)
-        )
+        # SwiGLU uses 3 projections: gate, up, and down
+        # The hidden dimension is typically (2/3) * 4 * embed_dim for SwiGLU
+        self.gate_proj = nn.Linear(embed_dim, ff_dim)
+        self.up_proj = nn.Linear(embed_dim, ff_dim)
+        self.down_proj = nn.Linear(ff_dim, embed_dim)
+        self.dropout = nn.Dropout(dropout)
     
     def forward(self, x):
-        return self.net(x)
+        """
+        SwiGLU activation: Swish(x * W_gate) * (x * W_up)
+        """
+        gate = torch.nn.functional.silu(self.gate_proj(x))  # Swish = SiLU
+        up = self.up_proj(x)
+        return self.dropout(self.down_proj(gate * up))
 
 
 class TransformerBlock(nn.Module):
@@ -139,7 +157,7 @@ class TransformerBlock(nn.Module):
     Transformer Block with RoPE-enhanced Multi-Head Attention
     """
     
-    def __init__(self, embed_dim, num_heads, ff_dim, max_position_embeddings=2048, dropout=0.1):
+    def __init__(self, embed_dim, num_heads, ff_dim, max_position_embeddings=2048, dropout=0.1, use_yarn=False, yarn_alpha=1.0, yarn_beta=0.1):
         """
         Args:
             embed_dim: Model dimension
@@ -147,16 +165,20 @@ class TransformerBlock(nn.Module):
             ff_dim: Feed-forward hidden dimension
             max_position_embeddings: Maximum sequence length for RoPE
             dropout: Dropout probability
+            use_yarn: Whether to use YaRN scaling
+            yarn_alpha: YaRN alpha parameter
+            yarn_beta: YaRN beta parameter
         """
         super().__init__()
         
         self.attention = MultiHeadAttention(
-            embed_dim, num_heads, max_position_embeddings, dropout
+            embed_dim, num_heads, max_position_embeddings, dropout, use_yarn, yarn_alpha, yarn_beta
         )
         self.feed_forward = FeedForward(embed_dim, ff_dim, dropout)
         
-        self.norm1 = nn.LayerNorm(embed_dim)
-        self.norm2 = nn.LayerNorm(embed_dim)
+        # Use RMSNorm instead of LayerNorm for better stability and efficiency
+        self.norm1 = RMSNorm(embed_dim)
+        self.norm2 = RMSNorm(embed_dim)
         self.dropout = nn.Dropout(dropout)
     
     def forward(self, x, mask=None):

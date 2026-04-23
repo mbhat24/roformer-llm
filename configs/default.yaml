@@ -9,6 +9,9 @@ model:
   max_position_embeddings: 512
   dropout: 0.1
   pad_token_id: 0
+  use_yarn: true  # Enable YaRN scaling for better extrapolation
+  yarn_alpha: 1.0  # YaRN alpha parameter
+  yarn_beta: 0.1  # YaRN beta parameter
 
 training:
   batch_size: 16
@@ -18,8 +21,8 @@ training:
   warmup_steps: 1000
   max_grad_norm: 1.0
   gradient_accumulation_steps: 1
-  fp16: false
-  bf16: false
+  fp16: false  # Enable for faster training on CUDA
+  bf16: false  # Enable for faster training on newer GPUs
 
 data:
   data_path: "data/processed/training_chunks.txt"
@@ -58,7 +61,7 @@ optimizer:
   eps: 1e-8
 
 scheduler:
-  type: "cosine"  # cosine, linear, constant
+  type: "cosine_restarts"  # cosine, cosine_restarts, linear, constant
   warmup_ratio: 0.1
   min_lr: 1e-6
 

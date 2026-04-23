@@ -27,7 +27,10 @@ class RoFormerLLM(nn.Module):
         ff_dim=3072,
         max_position_embeddings=2048,
         dropout=0.1,
-        pad_token_id=0
+        pad_token_id=0,
+        use_yarn=False,
+        yarn_alpha=1.0,
+        yarn_beta=0.1
     ):
         """
         Args:
@@ -39,6 +42,9 @@ class RoFormerLLM(nn.Module):
             max_position_embeddings: Maximum sequence length
             dropout: Dropout probability
             pad_token_id: Token ID for padding
+            use_yarn: Whether to use YaRN scaling for better extrapolation
+            yarn_alpha: YaRN alpha parameter
+            yarn_beta: YaRN beta parameter
         """
         super().__init__()
         
@@ -48,6 +54,9 @@ class RoFormerLLM(nn.Module):
         self.num_layers = num_layers
         self.max_position_embeddings = max_position_embeddings
         self.pad_token_id = pad_token_id
+        self.use_yarn = use_yarn
+        self.yarn_alpha = yarn_alpha
+        self.yarn_beta = yarn_beta
         
         # Token and position embeddings
         self.token_embedding = nn.Embedding(vocab_size, embed_dim)
@@ -64,13 +73,17 @@ class RoFormerLLM(nn.Module):
                 num_heads=num_heads,
                 ff_dim=ff_dim,
                 max_position_embeddings=max_position_embeddings,
-                dropout=dropout
+                dropout=dropout,
+                use_yarn=use_yarn,
+                yarn_alpha=yarn_alpha,
+                yarn_beta=yarn_beta
             )
             for _ in range(num_layers)
         ])
         
-        # Final layer norm
-        self.ln_f = nn.LayerNorm(embed_dim)
+        # Final layer norm (use RMSNorm for consistency)
+        from .rmsnorm import RMSNorm
+        self.ln_f = RMSNorm(embed_dim)
         
         # Language modeling head
         self.lm_head = nn.Linear(embed_dim, vocab_size, bias=False)

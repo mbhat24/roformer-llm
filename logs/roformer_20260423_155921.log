@@ -1,0 +1,14 @@
+2026-04-23 15:59:21 - roformer - INFO - Using device: mps
+2026-04-23 15:59:21 - roformer - INFO - Loading training data...
+2026-04-23 15:59:21 - roformer - INFO - Loaded 3764 text chunks
+2026-04-23 15:59:21 - roformer - INFO - Tokenizer built with 5000 words
+2026-04-23 15:59:21 - roformer - INFO - Train: 3387, Val: 188, Test: 189
+2026-04-23 15:59:21 - roformer - INFO - Creating model...
+2026-04-23 15:59:21 - roformer - INFO - Total parameters: 36,176,384
+2026-04-23 15:59:21 - roformer - INFO - Trainable parameters: 36,176,384
+2026-04-23 15:59:22 - roformer - INFO - Optimizer: adamw
+2026-04-23 15:59:22 - roformer - INFO - Scheduler: cosine_restarts
+2026-04-23 15:59:22 - roformer - INFO - Trainer initialized successfully
+2026-04-23 15:59:22 - roformer - INFO - Starting training...
+2026-04-23 15:59:22 - roformer - INFO - Total epochs: 50
+2026-04-23 15:59:22 - roformer - INFO - Total steps: 10600

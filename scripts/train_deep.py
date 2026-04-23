@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, random_split
-from torch.optim.lr_scheduler import CosineAnnealingLR, LinearLR
+from torch.optim.lr_scheduler import CosineAnnealingLR, LinearLR, CosineAnnealingWarmRestarts
 from tqdm import tqdm
 import numpy as np
 
@@ -39,6 +39,13 @@ class Trainer:
         self.config = config
         self.logger = get_logger("roformer", config.logging.log_dir)
         self.device = self._setup_device()
+        
+        # Enable mixed precision training if configured
+        self.use_amp = config.training.fp16 or config.training.bf16
+        self.scaler = torch.cuda.amp.GradScaler() if self.use_amp else None
+        
+        if self.use_amp:
+            self.logger.info(f"Using mixed precision training (FP16/BF16)")
         
         # Load data
         self.logger.info("Loading training data...")
@@ -169,7 +176,10 @@ class Trainer:
             ff_dim=model_config.ff_dim,
             max_position_embeddings=model_config.max_position_embeddings,
             dropout=model_config.dropout,
-            pad_token_id=model_config.pad_token_id
+            pad_token_id=model_config.pad_token_id,
+            use_yarn=self.config.model.use_yarn,
+            yarn_alpha=self.config.model.yarn_alpha,
+            yarn_beta=self.config.model.yarn_beta
         )
         
         return model
@@ -201,6 +211,14 @@ class Trainer:
                 T_max=total_steps - warmup_steps,
                 eta_min=self.config.scheduler.min_lr
             )
+        elif self.config.scheduler.type == "cosine_restarts":
+            # Cosine annealing with warm restarts for better convergence
+            scheduler = CosineAnnealingWarmRestarts(
+                self.optimizer,
+                T_0=total_steps // 4,  # Restart every 1/4 of training
+                T_mult=2,  # Double the restart interval each time
+                eta_min=self.config.scheduler.min_lr
+            )
         elif self.config.scheduler.type == "linear":
             scheduler = LinearLR(
                 self.optimizer,
@@ -226,27 +244,37 @@ class Trainer:
             target_ids = target_ids.to(self.device)
             attention_mask = attention_mask.to(self.device)
             
-            # Forward pass
-            logits = self.model(input_ids, attention_mask=attention_mask)
-            
-            # Compute loss
-            loss = self.criterion(
-                logits.view(-1, logits.size(-1)),
-                target_ids.view(-1)
-            )
+            # Forward pass with mixed precision if enabled
+            if self.use_amp:
+                with torch.cuda.amp.autocast():
+                    logits = self.model(input_ids, attention_mask=attention_mask)
+                    loss = self.criterion(
+                        logits.view(-1, logits.size(-1)),
+                        target_ids.view(-1)
+                    )
+            else:
+                logits = self.model(input_ids, attention_mask=attention_mask)
+                loss = self.criterion(
+                    logits.view(-1, logits.size(-1)),
+                    target_ids.view(-1)
+                )
             
             # Backward pass
             self.optimizer.zero_grad()
-            loss.backward()
             
-            # Gradient clipping
-            torch.nn.utils.clip_grad_norm_(
-                self.model.parameters(),
-                self.config.training.max_grad_norm
-            )
-            
-            # Optimizer step
-            self.optimizer.step()
+            if self.use_amp:
+                self.scaler.scale(loss).backward()
+                self.scaler.unscale_(self.optimizer)
+                torch.nn.utils.clip_grad_norm_(self.model.parameters(), self.config.training.max_grad_norm)
+                self.scaler.step(self.optimizer)
+                self.scaler.update()
+            else:
+                loss.backward()
+                torch.nn.utils.clip_grad_norm_(
+                    self.model.parameters(),
+                    self.config.training.max_grad_norm
+                )
+                self.optimizer.step()
             
             # Scheduler step
             if self.scheduler is not None:
