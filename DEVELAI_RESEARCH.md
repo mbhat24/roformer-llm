@@ -1,5 +1,24 @@
 # DevelAI: Developmental Intelligence Architecture
-## A Radical Paradigm Shift
+## NOT FULLY NOVEL - Prior Art Exists
+
+## ⚠️ CRITICAL FINDING
+
+**DevelAI is not fully novel research.** A paper published in October 2025 (arXiv:2510.05013) already implements developmental action and language learning with curiosity-driven exploration in robots.
+
+## Existing Work: "Curiosity-Driven Development of Action and Language in Robots Through Self-Exploration"
+
+**Published**: October 2025 (arXiv:2510.05013)
+
+**Key Features**:
+- Developmental learning of action and language
+- Curiosity-driven self-exploration
+- Embodied cognition in robots
+- Sparse input learning (poverty of stimulus)
+- Variational Recurrent Neural Networks (VRNN)
+- Soft Actor Critic (SAC) algorithm
+- Focus on compositionality and generalization
+
+## Comparison with DevelAI
 
 ## Biological Insight
 
