@@ -7,6 +7,7 @@ import torch.nn as nn
 import math
 from .rope import RotaryPositionEmbedding
 from .yarn_rope import YarnRotaryEmbedding
+from .lape import LAPE, LAPELite
 from .rmsnorm import RMSNorm
 
 
@@ -18,7 +19,7 @@ class MultiHeadAttention(nn.Module):
     enhanced with RoFormer's rotary position embeddings.
     """
     
-    def __init__(self, embed_dim, num_heads, max_position_embeddings=2048, dropout=0.1, use_yarn=False, yarn_alpha=1.0, yarn_beta=0.1):
+    def __init__(self, embed_dim, num_heads, max_position_embeddings=2048, dropout=0.1, use_yarn=False, yarn_alpha=1.0, yarn_beta=0.1, use_lape=False, lape_lite=False):
         """
         Args:
             embed_dim: Total dimension of the model
@@ -28,6 +29,8 @@ class MultiHeadAttention(nn.Module):
             use_yarn: Whether to use YaRN scaling for better extrapolation
             yarn_alpha: Alpha parameter for YaRN
             yarn_beta: Beta parameter for YaRN
+            use_lape: Whether to use Learned Adaptive Position Encoding (novel research)
+            lape_lite: Whether to use lightweight LAPE (less compute)
         """
         super().__init__()
         assert embed_dim % num_heads == 0, "embed_dim must be divisible by num_heads"
@@ -43,8 +46,21 @@ class MultiHeadAttention(nn.Module):
         self.v_proj = nn.Linear(embed_dim, embed_dim)
         self.out_proj = nn.Linear(embed_dim, embed_dim)
         
-        # Rotary Position Embedding (use YaRN if enabled)
-        if use_yarn:
+        # Position encoding strategy
+        if use_lape:
+            # Novel: Learned Adaptive Position Encoding
+            if lape_lite:
+                self.rope = LAPELite(
+                    self.head_dim,
+                    max_position_embeddings=max_position_embeddings
+                )
+            else:
+                self.rope = LAPE(
+                    self.head_dim,
+                    max_position_embeddings=max_position_embeddings
+                )
+        elif use_yarn:
+            # YaRN scaling
             self.rope = YarnRotaryEmbedding(
                 self.head_dim,
                 max_position_embeddings=max_position_embeddings,
@@ -52,6 +68,7 @@ class MultiHeadAttention(nn.Module):
                 beta=yarn_beta
             )
         else:
+            # Standard RoPE
             self.rope = RotaryPositionEmbedding(
                 self.head_dim,
                 max_position_embeddings=max_position_embeddings
@@ -157,7 +174,7 @@ class TransformerBlock(nn.Module):
     Transformer Block with RoPE-enhanced Multi-Head Attention
     """
     
-    def __init__(self, embed_dim, num_heads, ff_dim, max_position_embeddings=2048, dropout=0.1, use_yarn=False, yarn_alpha=1.0, yarn_beta=0.1):
+    def __init__(self, embed_dim, num_heads, ff_dim, max_position_embeddings=2048, dropout=0.1, use_yarn=False, yarn_alpha=1.0, yarn_beta=0.1, use_lape=False, lape_lite=False):
         """
         Args:
             embed_dim: Model dimension
@@ -168,11 +185,13 @@ class TransformerBlock(nn.Module):
             use_yarn: Whether to use YaRN scaling
             yarn_alpha: YaRN alpha parameter
             yarn_beta: YaRN beta parameter
+            use_lape: Whether to use Learned Adaptive Position Encoding (novel)
+            lape_lite: Whether to use lightweight LAPE
         """
         super().__init__()
         
         self.attention = MultiHeadAttention(
-            embed_dim, num_heads, max_position_embeddings, dropout, use_yarn, yarn_alpha, yarn_beta
+            embed_dim, num_heads, max_position_embeddings, dropout, use_yarn, yarn_alpha, yarn_beta, use_lape, lape_lite
         )
         self.feed_forward = FeedForward(embed_dim, ff_dim, dropout)
         

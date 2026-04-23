@@ -30,7 +30,9 @@ class RoFormerLLM(nn.Module):
         pad_token_id=0,
         use_yarn=False,
         yarn_alpha=1.0,
-        yarn_beta=0.1
+        yarn_beta=0.1,
+        use_lape=False,
+        lape_lite=False
     ):
         """
         Args:
@@ -45,6 +47,8 @@ class RoFormerLLM(nn.Module):
             use_yarn: Whether to use YaRN scaling for better extrapolation
             yarn_alpha: YaRN alpha parameter
             yarn_beta: YaRN beta parameter
+            use_lape: Whether to use Learned Adaptive Position Encoding (novel research)
+            lape_lite: Whether to use lightweight LAPE (less compute)
         """
         super().__init__()
         
@@ -57,6 +61,8 @@ class RoFormerLLM(nn.Module):
         self.use_yarn = use_yarn
         self.yarn_alpha = yarn_alpha
         self.yarn_beta = yarn_beta
+        self.use_lape = use_lape
+        self.lape_lite = lape_lite
         
         # Token and position embeddings
         self.token_embedding = nn.Embedding(vocab_size, embed_dim)
@@ -76,7 +82,9 @@ class RoFormerLLM(nn.Module):
                 dropout=dropout,
                 use_yarn=use_yarn,
                 yarn_alpha=yarn_alpha,
-                yarn_beta=yarn_beta
+                yarn_beta=yarn_beta,
+                use_lape=use_lape,
+                lape_lite=lape_lite
             )
             for _ in range(num_layers)
         ])

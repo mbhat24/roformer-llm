@@ -179,7 +179,9 @@ class Trainer:
             pad_token_id=model_config.pad_token_id,
             use_yarn=self.config.model.use_yarn,
             yarn_alpha=self.config.model.yarn_alpha,
-            yarn_beta=self.config.model.yarn_beta
+            yarn_beta=self.config.model.yarn_beta,
+            use_lape=self.config.model.use_lape,
+            lape_lite=self.config.model.lape_lite
         )
         
         return model

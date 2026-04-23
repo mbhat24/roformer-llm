@@ -23,6 +23,8 @@ class ModelConfig:
     use_yarn: bool = False  # Enable YaRN scaling for better extrapolation
     yarn_alpha: float = 1.0  # YaRN alpha parameter
     yarn_beta: float = 0.1  # YaRN beta parameter
+    use_lape: bool = False  # Enable Learned Adaptive Position Encoding (novel research)
+    lape_lite: bool = False  # Use lightweight LAPE (less compute)
     
     def __post_init__(self):
         """Ensure numeric types are correct"""
@@ -32,6 +34,12 @@ class ModelConfig:
             self.yarn_alpha = float(self.yarn_alpha)
         if isinstance(self.yarn_beta, str):
             self.yarn_beta = float(self.yarn_beta)
+        if isinstance(self.use_yarn, str):
+            self.use_yarn = self.use_yarn.lower() in ('true', '1', 'yes')
+        if isinstance(self.use_lape, str):
+            self.use_lape = self.use_lape.lower() in ('true', '1', 'yes')
+        if isinstance(self.lape_lite, str):
+            self.lape_lite = self.lape_lite.lower() in ('true', '1', 'yes')
 
 
 @dataclass
